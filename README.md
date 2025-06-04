@@ -1,9 +1,4 @@
 ## Vibe Coding for Frontend Designers and Developers
-
-This roadmap helps to combine creative coding (**React.js**, **Tailwind CSS**, **P5.js**, **Three.js (GLSL shaders)**, and **Motion Design**) 
-with practical no-code tools (Webflow and Wix Studio). The roadnap is blending design sensibility, code expression, and platform strategy 
-to help you become a frontend designer who can create expressive digital experiences AND deliver real-world websites fast.
-
 <details>
   <summary>Comparing Learning Paths: Vibe Coding vs Wix Studio vs Webflow</summary>
 
@@ -82,8 +77,13 @@ As a designer exploring frontend development and expressive design systems, here
 - ✅ For **professional UI/UX and product design portfolios**, go with **Webflow**.
 </details>
 
+This roadmap helps to combine creative coding (**React.js**, **Tailwind CSS**, **P5.js**, **Three.js (GLSL shaders)**, and **Motion Design**) 
+with practical no-code tools (Webflow and Wix Studio). The roadnap is blending design sensibility, code expression, and platform strategy 
+to help you become a frontend designer who can create expressive digital experiences AND deliver real-world websites fast.
+
+
 <details>
-  <summary>Foundations – React + Tailwind</summary>
+  <summary>1. Foundations – React + Tailwind</summary>
 
 - Set up React project with Vite or Create React App
 - Install Tailwind CSS and learn utility classes
@@ -99,7 +99,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>P5.js for Generative Art</summary>
+  <summary>2. P5.js for Generative Art</summary>
 
 - Learn P5.js syntax: `setup()`, `draw()`, shapes, colors
 - Create generative backgrounds, wave animations, or flow fields
@@ -115,7 +115,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Three.js + WebGL</summary>
+  <summary>3. Three.js + WebGL</summary>
 
 - Learn scene, camera, mesh, material, light
 - Add floating 3D objects, particles, glow effects
@@ -132,7 +132,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Motion Design (Framer Motion + GSAP)</summary>
+  <summary>4. Motion Design (Framer Motion + GSAP)</summary>
 
 - Install and use Framer Motion with React
 - Learn transitions, variants, spring physics
@@ -145,7 +145,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Wix Studio for Fast Prototypes and Client Sites</summary>
+  <summary>5. Wix Studio for Fast Prototypes and Client Sites</summary>
 
 - Explore responsive design using Wix Studio's new canvas layout
 - Rebuild a past design with AI-assisted layout tools
@@ -160,7 +160,7 @@ As a designer exploring frontend development and expressive design systems, here
 - [Designing Responsive Sites](https://support.wix.com/en/article/studio-designing-a-responsive-site) – How to use Wix’s adaptive tools.
 </details>
 <details>
-  <summary>Webflow for Layouts, CMS, and Visual Systems</summary>
+  <summary>6. Webflow for Layouts, CMS, and Visual Systems</summary>
 
 - Learn Webflow Designer (boxes, grid, flexbox)
 - Build layout from Figma → Webflow
