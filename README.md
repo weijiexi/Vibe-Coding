@@ -83,7 +83,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Week 1–2: Foundations – React + Tailwind</summary>
+  <summary>Foundations – React + Tailwind</summary>
 
 - Set up React project with Vite or Create React App
 - Install Tailwind CSS and learn utility classes
@@ -99,7 +99,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Week 3: P5.js for Generative Art</summary>
+  <summary>P5.js for Generative Art</summary>
 
 - Learn P5.js syntax: `setup()`, `draw()`, shapes, colors
 - Create generative backgrounds, wave animations, or flow fields
@@ -115,7 +115,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Week 4–5: Three.js + WebGL Vibes</summary>
+  <summary>Three.js + WebGL</summary>
 
 - Learn scene, camera, mesh, material, light
 - Add floating 3D objects, particles, glow effects
@@ -132,7 +132,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Week 6: Motion Design (Framer Motion + GSAP)</summary>
+  <summary>Motion Design (Framer Motion + GSAP)</summary>
 
 - Install and use Framer Motion with React
 - Learn transitions, variants, spring physics
@@ -145,7 +145,7 @@ As a designer exploring frontend development and expressive design systems, here
 </details>
 
 <details>
-  <summary>Week 7: Wix Studio for Fast Prototypes and Client Sites</summary>
+  <summary>Wix Studio for Fast Prototypes and Client Sites</summary>
 
 - Explore responsive design using Wix Studio's new canvas layout
 - Rebuild a past design with AI-assisted layout tools
@@ -160,7 +160,7 @@ As a designer exploring frontend development and expressive design systems, here
 - [Designing Responsive Sites](https://support.wix.com/en/article/studio-designing-a-responsive-site) – How to use Wix’s adaptive tools.
 </details>
 <details>
-  <summary>Week 8: Webflow for Layouts, CMS, and Visual Systems</summary>
+  <summary>Webflow for Layouts, CMS, and Visual Systems</summary>
 
 - Learn Webflow Designer (boxes, grid, flexbox)
 - Build layout from Figma → Webflow
