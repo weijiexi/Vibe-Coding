@@ -1,4 +1,8 @@
 ## Vibe Coding for Frontend Designers and Developers
+  - [ZTM](https://zerotomastery.io/career-paths/become-a-frontend-developer/)
+  - [wesbos.com](http://wesbos.com)
+  - [CS198 - Fullstackdecal](https://fullstackdecal.com/)
+
 <details>
   <summary>Comparing Learning Paths: Vibe Coding vs Wix Studio vs Webflow</summary>
 
