@@ -176,64 +176,92 @@ to help you become a frontend designer who can create expressive digital experie
 <details>
   <summary>Portfolio Planning: Brand Visual & UI/UX Design with AI Integration</summary>
 
-This guide outlines a portfolio structure for showcasing your abilities in **brand visual design**, **UI design**, and **AI-driven creativity**. It is tailored for professionals aiming to demonstrate aesthetic strength, design thinking, and AI-enhanced workflows.
 
-### Portfolio Objectives
-- Highlight your **visual design identity** (style, clarity, branding systems)
-- Show strong **UI/UX thinking** in both web and mobile contexts
-- Demonstrate understanding and application of **AI tools** in design workflows
-- Communicate your ability to **design human-centered AI experiences**
+This portfolio plan is tailored for designers who combine **expressive visual design** with **AI integration** and **frontend development**, 
+using tools like React.js, Tailwind CSS, P5.js, Three.js, GLSL shaders, Webflow, and Wix Studio.
+
+### Portfolio Objective
+- Showcase your **brand visual identity** across digital interfaces
+- Demonstrate **UI/UX thinking** in both creative and functional web products
+- Prove your ability to **integrate AI** into web UX: chatbots, generative UI, explainable systems
+- Show versatility in **code-based** and **no-code-based** workflows
+- Communicate strong **motion design and interaction sensibility**
 
 
-### Recommended Project Types
-| Category | Project Ideas | Focus |
-|----------|----------------|-------|
-| AI + UX | AI chatbot interface, prompt builder UI, intelligent assistant dashboard | Human-AI interaction, clarity, trust |
-| Brand Identity | Brand system for an AI startup (logo, palette, motion ID) | Consistency, voice, scalability |
-| Visual System | Design system UI kit (colors, typography, buttons, forms) | Component logic, hierarchy |
-| Conversational UI | Chat/messaging UI with feedback, context, and personality | Emotional design, flow logic |
-| Responsive Web UI | Homepage/landing page with brand storytelling and animation | Layout, motion, storytelling |
-| Mobile UI | Minimalist mobile app UI (e.g., planner, meditation app) | Usability, readability, intuitive UI |
-| Motion Design | Microinteractions or animated onboarding screens | Motion hierarchy, dynamic thinking |
+### Portfolio Sections & Projects
 
-### Case Study Page Structure
-Each project should be presented as a mini story:
-1. **Hero Section** – Clean preview of the final visual/UI work
-2. **Project Overview** – Context, goal, your role, tools used
-3. **Problem & Research** – Who is this for? What was the need?
-4. **Design Process** – Sketches, wireframes, exploration
-5. **Visual & UI Design** – Branding, components, layout
-6. **Prototypes or Interactions** – Video/gif or live preview
-7. **AI-Driven Aspects** – How AI was used in workflow/design logic
-8. **Reflection** – Learnings, next steps, growth
+#### 1. Hero Project: AI Product Interface (Code)
+**Tech**: React.js + Tailwind CSS + Framer Motion  
+**Highlight**: AI dashboard, assistant UI, or prompt interface  
+**Focus**: Trust indicators, input-output flow, brand styling
 
-### Portfolio Website Structure
+#### 2. Brand Visual System for AI Startup (Design + Webflow)
+**Tools**: Figma + Webflow  
+**Highlight**: Logo, color, typography, motion language, interactive site  
+**Focus**: Consistency + live site performance
+
+#### 3. Creative Coding Showcase
+**Tech**: P5.js / Three.js + shaders  
+**Highlight**: Radio waves, energy fields, abstract motion UIs  
+**Focus**: Visual experimentation + user interaction
+
+#### 4. Conversational UX Prototype
+**Tools**: Wix Studio / Figma  
+**Highlight**: Chat-based interface for mental health, education, or shopping  
+**Focus**: Flow design, mobile-first usability, AI guidance
+
+#### 5. Responsive Mobile UI (No-code or Code)
+**Tools**: Webflow, React Native, or Figma  
+**Highlight**: Planner, notes app, or wellness app  
+**Focus**: Layout precision, emotional design, accessibility
+
+#### 6. AI Playground / Sandbox
+**Tech**: OpenAI API + React + Tailwind / Webflow  
+**Highlight**: Prompt builder, image generator, feedback UI  
+**Focus**: Show your ability to build usable tools with AI backend
+
+### Each Project Should Include:
+
+1. **Cover visual or animation**  
+2. **What was the challenge or goal?**  
+3. **Your role** (designer, developer, researcher)  
+4. **Design process or coding logic**  
+5. **Visual system / component system**  
+6. **Live prototype (Webflow, Vercel, or GitHub Pages)**  
+7. **Outcome & reflections**
+
+### Site Structure (Recommended)
+
 ```
 Home
 │
-├── About
+├── About Me
 ├── Portfolio
-│   ├── AI Dashboard UI
-│   ├── Brand System for AI Product
-│   ├── Chatbot Mobile UI
-│   ├── Concept/Motion Gallery
-│
-├── Playground (AI Experiments, Sketches)
-├── Resume (PDF Download)
-└── Contact (Email or Form)
+│   ├── AI UI Assistant (React)
+│   ├── Brand System (Webflow)
+│   ├── Creative Coding Showcase
+│   ├── Chat UX (Wix Studio)
+│   ├── Mobile UI
+│   ├── AI Sandbox
+│   └── Artworks
+├── Resume (PDF)
+└── Contact
 ```
+## Platforms & Tools
+- **Code-Based**: React.js, Tailwind, P5.js, Three.js, GLSL, Framer Motion
+- **No-Code**: Webflow, Wix Studio, Figma
+- **AI APIs**: OpenAI, Midjourney, Replicate
+- **Design Systems**: Material 3, Fluent, Carbon
 
-### Suggested AI Tools to Showcase
-- **Figma AI Plugins** – UI automation, content generation
-- **Galileo / Uizard / Locofy** – UI prototyping with AI
-- **Khroma / Huemint** – AI-assisted color system design
-- **Runway / Pika / OpenArt** – Motion and video generation
-- **ChatGPT + Midjourney** – Prompt-driven design ideation
+## ✅ Final Tips
+- Mix **polish (branding, layout)** with **play (interaction, motion)**
+- Use **motion and AI as design languages**
+- Reflect both **artistic creativity** and **practical delivery skill**
+- Host projects live and share links + GitHub repos when possible
 
-### Tips
-- Keep your brand consistent across visuals, layouts, tone.
-- Prioritize **clarity** in your writing, **beauty** in your visuals, and **purpose** in your structure.
-- Blend **technical craft** (React, Framer, Tailwind, etc.) with **emotional storytelling**.
+
+> This portfolio shows you're a hybrid digital designer who blends **emotion, code, design systems, and intelligence**. You're not just making interfaces — you're crafting **digital experiences**.
+
 </details>
 
 ### Bonus Tools & Inspiration
