@@ -9,7 +9,7 @@
 <details>
   <summary>"Element interaction with the user" or "visual feedback"</summary>
 
-### Cursor (Mouse pointer style)
+#### Cursor (Mouse pointer style)
 | CSS Property           | Description                                | Tailwind Class          |
 |------------------------|--------------------------------------------|--------------------------|
 | `cursor: default;`     | Default arrow pointer.                     | `cursor-default`         |
@@ -23,9 +23,8 @@
 | `cursor: auto;`        | Browser default cursor.                    | `cursor-auto`            |
 | `cursor: progress;`    | Background task in progress cursor.        | *(Not in Tailwind by default)* |
 
-### Content (`::before` and `::after`)
+#### Content (`::before` and `::after`)
 Used to insert content before or after an element.
-
 ```css
 .element::before {
   content: "★";
@@ -33,12 +32,12 @@ Used to insert content before or after an element.
 ```
 > Tailwind does not support `content:` directly.
 
-### Opacity
+#### Opacity
 | CSS          | Description         | Tailwind     |
 |--------------|---------------------|--------------|
 | `opacity: 0.5`| 50% transparency.  | `opacity-50` |
 
-###  Mix Blend Mode
+####  Mix Blend Mode
 Defines how an element blends with the background.
 
 | CSS Value    | Tailwind Class        |
@@ -48,7 +47,7 @@ Defines how an element blends with the background.
 | `overlay`    | `mix-blend-overlay`   |
 | *(etc.)*     | *Supported in Tailwind* |
 
-### List Style
+#### List Style
 | CSS Property          | Description                               |
 |-----------------------|-------------------------------------------|
 | `list-style-image`    | Image as bullet point.                    |
@@ -61,7 +60,7 @@ Tailwind:
 <ul class="list-disc list-inside">...</ul>
 ```
 
-### Outline
+#### Outline
 | CSS             | Description                                  |
 |-----------------|----------------------------------------------|
 | `outline-color` | Color of the outline                         |
@@ -75,13 +74,13 @@ Tailwind:
 ```html
 <button class="outline outline-2 outline-red-500">Click</button>
 ```
-### Pointer Events
+#### Pointer Events
 | CSS                | Description                  | Tailwind             |
 |--------------------|------------------------------|----------------------|
 | `pointer-events: none` | Disable mouse events.   | `pointer-events-none`|
 | `pointer-events: auto` | Enable mouse events.    | `pointer-events-auto`|
 
-### Resize
+#### Resize
 Controls if an element (like `<textarea>`) is resizable.
 
 | CSS Value     | Tailwind         |
@@ -91,7 +90,7 @@ Controls if an element (like `<textarea>`) is resizable.
 | `vertical`    | `resize-y`       |
 | `horizontal`  | `resize-x`       |
 
-### Vertical Align
+#### Vertical Align
 Aligns inline or table-cell content vertically.
 
 | CSS Value   | Tailwind         |
@@ -100,9 +99,8 @@ Aligns inline or table-cell content vertically.
 | `top`       | `align-top`      |
 | `bottom`    | `align-bottom`   |
 
-### Will-Change
+#### Will-Change
 Hints the browser about expected changes.
-
 ```css
 will-change: transform;
 ```
@@ -113,46 +111,14 @@ Tailwind: *(Use inline style)*
 ```
 </details>
 
+
 <details>
   <summary>Background Images</summary>
 
-The `background` property in CSS is a **shorthand property** for setting multiple background-related properties in a single declaration.
+The CSS properties that allow you to style the background of an element with colors and images
+- [Background](https://cssreference.io/backgrounds/)
 
-## Individual Background Properties
-
-- **`background-attachment`**  
-  Defines whether the background image scrolls with the rest of the page or is fixed.
-
-- **`background-clip`**  
-  Defines how far the background (color or image) extends within the element.
-
-- **`background-color`**  
-  Sets the background color of an element.
-
-- **`background-image`**  
-  Specifies one or more background images for an element.
-
-- **`background-origin`**  
-  Specifies the origin position of the background image.
-
-- **`background-position`**  
-  Specifies the position of the background image.
-
-- **`background-repeat`**  
-  Sets whether/how the background image repeats.
-
-- **`background-size`**  
-  Specifies the size of the background image:
-
-  - `auto`: Default value. The image is displayed at its original size.
-  - `length`: e.g., `100px 200px`
-  - `percentage`: e.g., `50% 50%` (of the parent element)
-  - `cover`: Scales the image to cover the entire background area. Parts may be clipped.
-  - `contain`: Scales the image to fit within the background area. Entire image is visible.
-
-## Shorthand Syntax Example
-
-Instead of writing:
+Shorthand Syntax Example
 ```css
 background-image: url('image1.jpg');
 background-repeat: no-repeat;
@@ -161,32 +127,30 @@ background-position: center;
 background-size: cover;
 background-color: #ff0000;
 ```
-
-You can write:
 ```css
 background: url('image1.jpg') no-repeat fixed center/cover #ff0000;
 ```
 </details>
+
+
 
 <details>
   <summary>SVG Basics</summary>
 
 **SVG** (Scalable Vector Graphics) is used to define vector-based graphics directly within HTML. SVG images are scalable and do not lose quality, making them ideal for web design, logos, icons, and complex illustrations.
 
-### Basic SVG Structure
-
+#### Basic SVG Structure
 ```html
 <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
   <!-- Your SVG content goes here -->
 </svg>
 ```
-
 - `width` and `height`: Set the size of the SVG container.
 - `xmlns`: Declares the XML namespace for SVG.
 
-### Common SVG Elements
+#### Common SVG Elements
 
-#### `<circle>` - Draws a circle
+##### `<circle>` - Draws a circle
 ```html
 <circle cx="100" cy="100" r="50" fill="blue" />
 ```
@@ -194,14 +158,14 @@ background: url('image1.jpg') no-repeat fixed center/cover #ff0000;
 - `r`: Radius of the circle.
 - `fill`: Color of the circle.
 
-#### `<rect>` - Draws a rectangle
+##### `<rect>` - Draws a rectangle
 ```html
 <rect x="50" y="50" width="100" height="50" fill="red" />
 ```
 - `x` and `y`: Coordinates of the top-left corner.
 - `width` and `height`: Dimensions of the rectangle.
 
-#### `<line>` - Draws a straight line
+##### `<line>` - Draws a straight line
 ```html
 <line x1="0" y1="0" x2="200" y2="200" stroke="black" stroke-width="2" />
 ```
@@ -210,26 +174,25 @@ background: url('image1.jpg') no-repeat fixed center/cover #ff0000;
 - `stroke`: Line color.
 - `stroke-width`: Line thickness.
 
-#### `<ellipse>` - Draws an ellipse
+##### `<ellipse>` - Draws an ellipse
 ```html
 <ellipse cx="100" cy="100" rx="80" ry="40" fill="green" />
 ```
 - `rx` and `ry`: Horizontal and vertical radius.
 
-#### `<polygon>` - Draws a shape with multiple sides
+##### `<polygon>` - Draws a shape with multiple sides
 ```html
 <polygon points="50,150 100,50 150,150" fill="yellow" />
 ```
 - `points`: A list of (x, y) coordinates for the polygon’s corners.
 
-#### `<path>` - Draws complex shapes with commands
+##### `<path>` - Draws complex shapes with commands
 ```html
 <path d="M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" fill="none" stroke="purple" />
 ```
 - The `d` attribute contains a series of commands to draw lines and curves.
 
-### SVG Drawing Example
-
+SVG Drawing Example
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -239,7 +202,6 @@ background: url('image1.jpg') no-repeat fixed center/cover #ff0000;
   <title>SVG Example</title>
 </head>
 <body>
-
   <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
     <!-- Circle -->
     <circle cx="100" cy="100" r="50" fill="blue" />
@@ -259,11 +221,10 @@ background: url('image1.jpg') no-repeat fixed center/cover #ff0000;
     <!-- Path -->
     <path d="M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" fill="none" stroke="purple" stroke-width="2" />
   </svg>
-
 </body>
 </html>
 ```
-### Explanation
+Explanation
 - **Circle**: A blue circle centered at (100, 100) with a radius of 50.
 - **Rectangle**: A red square at position (25, 25) with dimensions 50x50.
 - **Line**: A black diagonal line across the SVG canvas.
@@ -274,14 +235,17 @@ background: url('image1.jpg') no-repeat fixed center/cover #ff0000;
 > SVG elements can be styled with CSS, animated, and made interactive with JavaScript.
 </details>
 
+
 <details>
   <summary>Color</summary>
 
-  ### Predefined Colors
+- [Color](https://cssreference.io/typography/)
+
+#### Predefined Colors
   CSS comes with a set of named color values that can be used directly, such as:
   - `yellow`, `blue`, `pink`, `lavender`, `cyan`, `purple`, etc.
 
-### RGBA
+#### RGBA
 RGBA stands for **Red, Green, Blue, Alpha**. It's formatted as:
 ```
 rgba(red, green, blue, alpha)
@@ -291,38 +255,32 @@ rgba(red, green, blue, alpha)
   - `1` is fully opaque
   - `0` is fully transparent
   - Values in between represent partial transparency
-
-Example:
 ```css
 rgba(100, 200, 40, 0.5)
 ```
 
-### RGB
+#### RGB
 RGB is similar to RGBA but **does not include opacity**. It's formatted as:
 ```
 rgb(red, green, blue)
 ```
 - All values range from 0 to 255
 - Defaults to 100% opacity
-
-Example:
 ```css
 rgb(100, 200, 40)
 ```
 
-###  HEX (Hexadecimal)
+####  HEX (Hexadecimal)
 Hex is a way of representing colors using hexadecimal (base-16) notation.
 - Begins with `#`
 - Followed by **six digits** (0–9 and a–f)
 - `#000000` is black
 - `#ffffff` is white
-
-Example:
 ```css
 #ff5733
 ```
 
-### Named Color Example
+#### Named Color Example
 You can use named colors in CSS like this:
 ```css
 #container {
@@ -331,16 +289,17 @@ You can use named colors in CSS like this:
 ```
 </details>
 
+
+
 <details>
   <summary>Typography</summary>
 
   Typography is the art of arranging letters and text to make the copy legible, clear, and visually appealing to the reader. It involves font style, appearance, and structure, which aims to elicit certain emotions and convey specific messages.
 
-### Choosing Type – Fonts Knowledge
+#### Choosing Type – Fonts Knowledge
 - [Google Fonts](https://fonts.google.com/)
 - [MyFonts](https://www.myfonts.com/)
-
-### Common CSS Typography Properties
+- [Typography](https://cssreference.io/typography/)
 
 #### Fonts
 - `font-family`
@@ -362,76 +321,57 @@ You can use named colors in CSS like this:
 - `white-space`
 - `word-break`
 - `word-spacing`
-
 </details>
+
+
+
 
 <details>
   <summary>Sizing & Units</summary>
 
-  ### Key Properties
+#### Key Properties
 - `width`, `height`, `min-width`, `max-width`, `min-height`, `max-height`
 - These properties set size constraints for elements
 
-### Why Use Them?
+#### Why Use Them?
 - **Responsive Design**: Keep elements looking good across screen sizes
 - **Layout Consistency**: Prevent items from getting too small or large
 - **Content Overflow Management**: Handle dynamic content gracefully
 
-## Units Overview
-
-### Pixels (`px`)
-- 100px ≈ 1 inch (depends on screen)
-- Use when fixed size is needed and doesn't need to scale
-
-### Percentages (`%`)
-- Relative to the parent element's size
-- Useful for responsive scaling
-
-### rem vs em
-- `1rem = 16px` (relative to `<html>` root font size)
-- `1em = 16px` by default (relative to **current** element's font size)
+#### Units Overview
+- ##### Pixels (`px`)
+    - 100px ≈ 1 inch (depends on screen)
+    - Use when fixed size is needed and doesn't need to scale
+- #### Percentages (`%`)
+    - Relative to the parent element's size
+    - Useful for responsive scaling
+- #### rem vs em
+    - `1rem = 16px` (relative to `<html>` root font size)
+    - `1em = 16px` by default (relative to **current** element's font size)
 
 #### When to Use
-- **rem**: Global consistency, typography scale, paddings/margins
-- **em**: Local/component-level scaling, nested flexibility
+- **rem**: Use rem: For global consistency and when you want elements to scale uniformly across your entire document. Ideal for setting typographic scales, margins, padding, etc.
+- **em**: For component-level scaling where child elements should be sized relative to their parent. Useful for nested components and maintaining proportional scaling within a component.
 
 #### Advantages
 1. **Scalability & Accessibility**
-   - rem/em allow size scaling with root font-size or user settings
-   - Great for accessibility and responsive designs
+   - **Responsive Design**: rem and em units allow for easier scaling of elements based on the font size, which is particularly useful for responsive design. When the root font size changes (e.g., based on a media query), all elements using rem units will scale accordingly.
+   - **Accessibility**: Users can change their default browser font size for better readability. Using rem and em ensures that your design respects these user preferences.
 
 2. **Consistency**
-   - rem ensures a consistent visual hierarchy
-   - em provides proportional scaling within components
+   - **Consistent Sizing**: rem units ensure consistent sizing across your entire document because they are relative to the root element (<html>). This makes it easier to maintain a harmonious visual hierarchy.
+   - **Nested Elements**: em units can be useful for creating scalable components where child elements should size relative to their parent. This allows for consistent relative scaling within components.
 
 3. **Maintainability**
-   - Adjust root font-size to scale rem-based values globally
-   - em units make components flexible for reuse
+   - **Easy Adjustments**: By changing the root font size, you can globally adjust the size of all elements using rem units. This is especially helpful for design tweaks or adjustments for different screen sizes.
+   - **Reusable Components**: Using em units within components makes them more flexible and reusable in different contexts.
 
-### Viewport Units (`vh`, `vw`)
+#### Viewport Units (`vh`, `vw`)
 - `vh` = 1% of viewport height
 - `vw` = 1% of viewport width
 - ⚠️ Often buggy and not recommended unless used carefully
 
-
-## Best Practices
-
-### Min/Max Width
-- Always pair `width` with `min-width` and `max-width`
-- Use `%` or `rem` for `width`, and `px` limits for safety
-- Works for `height` as well
-
-### The Containing Block
-- The parent element used for calculating `%` units
-- Depends on positioning (`static`, `relative`, `absolute`, etc.)
-- Can be the closest ancestor or the viewport
-
-### 100% Height Issue
-- `height: 100%` won’t work unless **all ancestors** have defined height
-- Fix: Set `height: 100%` on body/html or use `vh`
-- Use `position: absolute/fixed` when needed
-
-## Which Units Should I Choose?
+#### Which Units Should I Choose?
 - Use `rem` for consistent, scalable layout design
 - Use `em` for flexible, nested components
 - Use `%` for responsive width/height
@@ -439,19 +379,18 @@ You can use named colors in CSS like this:
 - Avoid over-relying on `vh`/`vw` unless confident
 </details>
 
+
+
 <details>
   <summary>Centering</summary>
 
 Centering elements in CSS can be done in a variety of ways depending on the type of layout (block, flex, grid, or inline elements) and whether you are centering horizontally, vertically, or both.
 
-## 1. Centering Block Elements Horizontally
-
+#### 1. Centering Block Elements Horizontally
 For block-level elements like `div`, centering horizontally is often done using `margin: auto`.
-
 ```html
 <div class="centered-box">I'm a centered box</div>
 ```
-
 ```css
 .centered-box {
   width: 50%;
@@ -461,30 +400,26 @@ For block-level elements like `div`, centering horizontally is often done using 
 }
 ```
 
-## 2. Centering Inline Elements Horizontally
-
+#### 2. Centering Inline Elements Horizontally
 Use `text-align: center` on the parent.
-
 ```html
 <div class="parent">
   <span class="centered-text">Centered Text</span>
 </div>
 ```
-
 ```css
 .parent {
   text-align: center;
 }
 ```
 
-## 3. Centering with Flexbox
-
+#### 3. Centering with Flexbox
+Flexbox is a modern, flexible way to center both horizontally and vertically with minimal code. You can use display: flex on a parent element to align items in both directions.
 ```html
 <div class="flex-container">
   <div class="centered-item">I'm centered!</div>
 </div>
 ```
-
 ```css
 .flex-container {
   display: flex;
@@ -498,15 +433,17 @@ Use `text-align: center` on the parent.
   padding: 20px;
 }
 ```
+- justify-content: center; centers horizontally.
+- align-items: center; centers vertically.
 
-## 4. Centering with CSS Grid
+#### 4. Centering with CSS Grid
+CSS Grid is another powerful layout tool that allows you to center items easily.
 
 ```html
 <div class="grid-container">
   <div class="grid-item">I'm centered with Grid!</div>
 </div>
 ```
-
 ```css
 .grid-container {
   display: grid;
@@ -519,15 +456,16 @@ Use `text-align: center` on the parent.
   padding: 20px;
 }
 ```
+- place-items: center; is shorthand for centering both horizontally and vertically in a grid.
 
-## 5. Absolute Centering with Transform
+#### 5. Absolute Centering with Transform
+You can also center elements by using absolute positioning along with transform.
 
 ```html
 <div class="absolute-container">
   <div class="absolute-centered">I'm absolutely centered!</div>
 </div>
 ```
-
 ```css
 .absolute-container {
   position: relative;
@@ -543,13 +481,15 @@ Use `text-align: center` on the parent.
   padding: 20px;
 }
 ```
+- **top: 50%; left: 50%;** moves the element to the center of the parent.
+- **transform: translate(-50%, -50%);** adjusts the element to center relative to its own dimensions.
 
-## 6. Vertically Center Single-Line Text with Line-Height
 
+#### 6. Vertically Center Single-Line Text with Line-Height
+If you need to vertically center text inside a block element, you can use line-height for simple single-line text.
 ```html
 <div class="centered-text-box">Centered Text</div>
 ```
-
 ```css
 .centered-text-box {
   height: 200px;
@@ -558,45 +498,86 @@ Use `text-align: center` on the parent.
   background-color: lightblue;
 }
 ```
+- This method works for single-line text but not for multiline content.
 
-## Summary
+#### Summary
+- **Block elements**: Use **margin: auto** for horizontal centering.
+- **Flexbox**: The most flexible and modern method for centering both horizontally and vertically with **justify-content** and **align-items**.
+- **Grid**: Use **place-items: center** for easy centering in both directions.
+- **Absolute Positioning**: Combine with `transform`for precise control.
+- **Text**: Use `text-align`for horizontal centering and `line-height`for vertical centering in simple cases.
 
-- **Block elements**: Use `margin: auto`.
-- **Flexbox**: Use `justify-content` and `align-items`.
-- **Grid**: Use `place-items: center`.
-- **Absolute Positioning**: Combine with `transform`.
-- **Text**: Use `text-align` and `line-height`.
-
-
-## CSS Transform Explained
-
-```css
-transform: translate(50px, 100px);      /* Move along x and y axes */
-transform: rotate(45deg);               /* Rotate element 45 degrees */
-transform: scale(1.5, 1.5);             /* Scale by 1.5 on x and y */
-transform: skew(30deg, 20deg);          /* Skew on x and y axes */
-transform: translate(50px, 50px) rotate(45deg) scale(1.2); /* Combined transforms */
-transform-origin: top left;            /* Set transform origin */
-```
-
-## Extra Snippets
-
-### Horizontally center block elements
+#### Horizontally Center Block Elements
 
 ```css
 .potato {
-  margin: 0 auto;
+   margin-right: auto;
+   margin-left: auto;
+}
+```
+Or simply:
+```css
+.potato {
+   margin: 0 auto;
 }
 ```
 
-### Vertically center with absolute + transform
+#### Vertically Center Block Elements Using Absolute Position
 
 ```css
 #big-potato {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+   width: 100px;
+   height: 50px;
+   position: absolute;
+   top: 50%;
+}
+```
+
+#### Using `transform` to Vertically Center the Block Element
+
+The `transform` property allows you to apply various transformations to elements, such as rotation, scaling, skewing, or translation (moving).
+
+```css
+#big-potato {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+```
+
+#### Examples of Transform Functions
+- Translate: Moves an element along the x and y axes
+```css
+transform: translate(50px, 100px);
+```
+- Rotate: Rotates the element by a specified angle
+```css
+transform: rotate(45deg);
+```
+- Scale: Scales the element along the x and y axes by the specified factor
+```css
+transform: scale(1.5, 1.5);
+```
+- Skew: Skews the element along the x and y axes
+```css
+transform: skew(30deg, 20deg);
+```
+- Multiple transforms: Combine multiple transforms with a space
+```css
+transform: translate(50px, 50px) rotate(45deg) scale(1.2);
+```
+- Transform Origin: Specifies the origin point of the transform
+```css
+transform-origin: top left;
+```
+
+#### Center Block Elements Both Horizontally and Vertically
+```css
+#big-potato {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 ```
 </details>
@@ -606,50 +587,80 @@ transform-origin: top left;            /* Set transform origin */
 <details>
   <summary>CSS Selectors</summary>
 
-This document provides a comprehensive reference of CSS selectors, pseudo-classes, attributes, and common layout techniques.
+<details>
+  <summary>CSS Selectors Summary</summary>
+This is a comprehensive list of CSS selectors with examples and descriptions.
 
-## CSS Selectors Summary
-
-| Selector | Example | Description |
-|----------|---------|-------------|
-| `.class` | `.intro` | Selects elements with class="intro" |
-| `.class1.class2` | `.name1.name2` | Selects elements with both class names |
-| `.class1 .class2` | `.name1 .name2` | Selects `.class2` inside `.class1` |
-| `#id` | `#firstname` | Selects element with id="firstname" |
+| **Selector** | **Example** | **Description** |
+|--------------|-------------|-----------------|
+| `.class` | `.intro` | Selects all elements with class="intro" |
+| `.class1.class2` | `.name1.name2` | Selects all elements with both name1 and name2 set within its class attribute |
+| `.class1 .class2` | `.name1 .name2` | Selects all elements with name2 that is a descendant of an element with name1 |
+| `#id` | `#firstname` | Selects the element with id="firstname" |
 | `*` | `*` | Selects all elements |
 | `element` | `p` | Selects all `<p>` elements |
-| `element.class` | `p.intro` | Selects `<p>` with class="intro" |
-| `element, element` | `div, p` | Selects all `<div>` and `<p>` elements |
-| `element element` | `div p` | Selects `<p>` inside `<div>` |
-| `element > element` | `div > p` | Selects direct child `<p>` of `<div>` |
-| `element + element` | `div + p` | Selects `<p>` immediately after `<div>` |
-| `element1 ~ element2` | `p ~ ul` | Selects every `<ul>` preceded by a `<p>` |
+| `element.class` | `p.intro` | Selects all `<p>` elements with class="intro" |
+| `element,element` | `div, p` | Selects all `<div>` elements and all `<p>` elements |
+| `element element` | `div p` | Selects all `<p>` elements inside `<div>` elements |
+| `element>element` | `div > p` | Selects all `<p>` elements where the parent is a `<div>` element |
+| `element+element` | `div + p` | Selects the first `<p>` element that is placed immediately after `<div>` elements |
+| `element1~element2` | `p ~ ul` | Selects every `<ul>` element that is preceded by a `<p>` element |
+| `[attribute]` | `[target]` | Selects all elements with a `target` attribute |
+| `[attribute=value]` | `[target="_blank"]` | Selects all elements with `target="_blank"` |
+| `[attribute~=value]` | `[title~="flower"]` | Selects all elements with a `title` attribute containing the word "flower" |
+| `[attribute|=value]` | `[lang|="en"]` | Selects all elements with a `lang` attribute equal to "en" or starting with "en-" |
+| `[attribute^=value]` | `a[href^="https"]` | Selects every `<a>` element whose href attribute value begins with "https" |
+| `[attribute$=value]` | `a[href$=".pdf"]` | Selects every `<a>` element whose href attribute value ends with ".pdf" |
+| `[attribute*=value]` | `a[href*="w3schools"]` | Selects every `<a>` element whose href attribute contains "w3schools" |
+| `:active` | `a:active` | Selects the active link |
+| `::after` | `p::after` | Inserts content after each `<p>` element |
+| `::before` | `p::before` | Inserts content before each `<p>` element |
+| `:checked` | `input:checked` | Selects every checked `<input>` element |
+| `:default` | `input:default` | Selects the default `<input>` element |
+| `:disabled` | `input:disabled` | Selects every disabled `<input>` element |
+| `:empty` | `p:empty` | Selects every `<p>` element that has no children |
+| `:enabled` | `input:enabled` | Selects every enabled `<input>` element |
+| `:first-child` | `p:first-child` | Selects every `<p>` element that is the first child of its parent |
+| `::first-letter` | `p::first-letter` | Selects the first letter of every `<p>` element |
+| `::first-line` | `p::first-line` | Selects the first line of every `<p>` element |
+| `:first-of-type` | `p:first-of-type` | Selects every `<p>` that is the first of its type among siblings |
+| `:focus` | `input:focus` | Selects the input element with focus |
+| `:fullscreen` | `:fullscreen` | Selects the element in full-screen mode |
+| `:has()` | `h2:has(+p)` | Selects `<h2>` elements immediately followed by a `<p>` element |
+| `:hover` | `a:hover` | Selects links when hovered |
+| `:in-range` | `input:in-range` | Selects inputs with a value within a range |
+| `:indeterminate` | `input:indeterminate` | Selects inputs in an indeterminate state |
+| `:invalid` | `input:invalid` | Selects inputs with invalid values |
+| `:lang()` | `p:lang(it)` | Selects `<p>` elements with `lang="it"` |
+| `:last-child` | `p:last-child` | Selects every `<p>` that is the last child of its parent |
+| `:last-of-type` | `p:last-of-type` | Selects every `<p>` that is the last of its type among siblings |
+| `:link` | `a:link` | Selects all unvisited links |
+| `::marker` | `::marker` | Selects list item markers |
+| `:not()` | `:not(p)` | Selects everything except `<p>` elements |
+| `:nth-child(n)` | `p:nth-child(2)` | Selects the second child `<p>` element |
+| `:nth-last-child(n)` | `p:nth-last-child(2)` | Selects the second-to-last `<p>` child |
+| `:nth-last-of-type(n)` | `p:nth-last-of-type(2)` | Selects the second-to-last `<p>` of its type |
+| `:nth-of-type(n)` | `p:nth-of-type(2)` | Selects the second `<p>` of its type |
+| `:only-of-type` | `p:only-of-type` | Selects `<p>` if it's the only `<p>` among siblings |
+| `:only-child` | `p:only-child` | Selects `<p>` if it's the only child of its parent |
+| `:optional` | `input:optional` | Selects inputs without the "required" attribute |
+| `:out-of-range` | `input:out-of-range` | Selects inputs with out-of-range values |
+| `::placeholder` | `input::placeholder` | Selects the placeholder text of inputs |
+| `:read-only` | `input:read-only` | Selects inputs marked as read-only |
+| `:read-write` | `input:read-write` | Selects inputs that are editable |
+| `:required` | `input:required` | Selects inputs marked as required |
+| `:root` | `:root` | Selects the document's root element |
+| `::selection` | `::selection` | Selects the part of an element that is selected |
+| `:target` | `#news:target` | Selects the element targeted by a URL anchor |
+| `:valid` | `input:valid` | Selects inputs with valid values |
+| `:visited` | `a:visited` | Selects visited links |
+</details>
 
-## Attribute Selectors
 
-- `[target]`: Elements with target attribute
-- `[target="_blank"]`: Exact match
-- `[title~="flower"]`: Contains word "flower"
-- `[lang|="en"]`: Starts with "en"
-- `[href^="https"]`: Begins with "https"
-- `[href$=".pdf"]`: Ends with ".pdf"
-- `[href*="w3schools"]`: Contains "w3schools"
+<details>
+  <summary>Cascade, Specificity, Inheritance</summary>
 
-## Pseudo-Classes and Elements
-
-Examples include:
-- `:hover`, `:focus`, `:active`
-- `:first-child`, `:last-child`, `:nth-child(n)`
-- `::before`, `::after`, `::first-letter`
-- `:checked`, `:disabled`, `:enabled`
-- `:read-only`, `:read-write`
-- `:visited`, `:link`, `:target`
-- `:not()`, `:empty`, `:in-range`, `:out-of-range`
-- `:root`, `::selection`, `::marker`
-
-## Inheritance
 Child elements inherit properties from parent elements. If a child does not define its own value for a property, it inherits from the parent.
-
 
 #### Tag Selectors
 ```css
@@ -657,24 +668,18 @@ h2 {
   color: red;
   width: 20px;
   height: 40px;
-}
+} /*All elements of type `h2` in your HTML will be affected.*/
 ```
-- All elements of type `h2` in your HTML will be affected.
-
 
 #### Class Selectors
 **Class** — Apply a set of rules to multiple elements on the page.
-
 - **HTML**: Add the `class` attribute to the opening tag.
 - **CSS**: Use a period `.` in front of the class name as a selector.
-
-**Example:**
 ```html
 <p class="green">Green text</p>
 <p class="green">Green text 2</p>
 <div class="green">Also green</div>
 ```
-
 ```css
 .green {
   color: green;
@@ -683,42 +688,24 @@ h2 {
 
 #### ID Selectors
 **ID** — Apply a set of rules to only one distinct element on the page.
-
 - **HTML**: Add the `id` attribute to the opening tag.
 - **CSS**: Use a hashtag `#` in front of the ID name as a selector.
 
-**Example:**
 ```html
 <p id="blue">Blue text</p>
 ```
-
 ```css
 #blue {
   color: blue;
 }
 ```
-## Grouping Selectors (Comma `,`)
+</details>
 
-Use a comma `,` to apply the same CSS to multiple elements:
+<details>
+  <summary>Advanced CSS Selectors</summary>
 
-```css
-h1, h2, h3 {
-  /* All h1, h2, h3 elements will be affected */
-}
-```
-
-```css
-h1, h2, #special-heading {
-  color: blue;
-  background: gray;
-}
-```
-
-You can use this to reduce code repetition.
-
-## The Universal Selector `*`
-
-The universal selector `*` targets **all elements** in the document:
+#### 1.Universal Selector (*)
+The universal selector `*` affects all elements on the page.
 
 ```css
 * {
@@ -726,12 +713,9 @@ The universal selector `*` targets **all elements** in the document:
   padding: 0;
 }
 ```
-
-⚠️ This can be overly powerful and is not recommended for most cases.
-
-#### Alternative to Universal Selector
-
-Instead of using `*`, you can apply global styles to the `html` element. Many properties, such as `font-family`, are inherited:
+> ⚠️ Use it with caution; it's very powerful and not recommended for frequent use.
+##### 2.Alternative: Use inheritance
+For example, apply font-family on `html` so it cascades to children:
 
 ```css
 html {
@@ -739,25 +723,39 @@ html {
 }
 ```
 
-## AND Selectors (Multiple Conditions)
 
-Apply styles only when an element matches **all** conditions:
+#### 3.Grouping Selectors with Commas (,)
+Use commas to apply styles to multiple, unrelated elements.
+
+```css
+h1, h2, h3 {
+  /* Applies to all h1, h2, and h3 elements */
+}
+```
+```css
+h1, h2, #special-heading {
+  color: blue;
+  background: gray;
+}
+```
+```css
+.one, .two, #three {
+  font-size: 32px;
+}
+```
+
+#### 4.Combining Selectors (No comma = AND)
+To apply styles to elements matching multiple conditions, write selectors together without commas.
 
 ```css
 h1.my-title.red-text {
   color: red;
   font-size: 50px;
 }
-/* Only h1s with both classes .my-title and .red-text */
+/* Only h1s with both class "my-title" and "red-text" will be affected */
 ```
 
-## Selecting Elements with Multiple Classes
-
-```html
-<p class="green big">Lorem</p>
-<p class="big">Ipsum</p>
-```
-
+##### Selecting Element with Multiple Class Names
 ```css
 .green.big {
   color: green;
@@ -765,22 +763,15 @@ h1.my-title.red-text {
 }
 ```
 
-## Hierarchical Selectors (Descendant Selectors)
-
-Use a **space** to apply styles to descendants of a selector:
+#### 5.Descendant Selectors (Hierarchy - space)
+To apply styles to child elements at any depth within a parent, use a space between selectors.
 
 ```css
 .text h1 {
   color: blue;
 }
-/* All h1s inside elements with class "text" */
 ```
-
 ```css
-.text {
-  width: 2rem;
-}
-
 .text .pretty {
   color: green;
 }
@@ -790,30 +781,26 @@ Use a **space** to apply styles to descendants of a selector:
 }
 ```
 
-- `.text` has width `2rem` and default black color.
-- `.text .pretty` has green text and width `2rem`.
-- `.text .ugly` has width `4rem` and default color.
+#### 6.Nested Selectors (e.g. within a div)
 
-## Selecting Nested Elements
-
+Example:
 ```html
 <div id="jay">
   <p class="park">Jay Park <3</p>
 </div>
 ```
-
 ```css
 #jay .park {
   font-size: 32px;
 }
-/* Targets .park paragraphs inside #jay */
 ```
+This selects all `.park` elements inside the element with ID `jay`.
+</details>
 
-## CSS Combinators and Class Selectors Example
+<details>
+  <summary>CSS Combinators & Combined Selectors</summary>
 
-This example demonstrates how to use **multiple CSS classes**, **combined selectors**, and **combinators** in HTML and CSS.
-
-### HTML Structure
+This example demonstrates how to use **multiple CSS classes** and **combined selectors** to style a webpage layout.
 
 ```html
 <body>
@@ -831,56 +818,64 @@ This example demonstrates how to use **multiple CSS classes**, **combined select
    </section>
 </body>
 ```
-
-### CSS Styling
-
 ```css
 body {
    font-family: sans-serif;
 }
+```
+- Applies a sans-serif font to the entire document.
 
+```css
 nav {
    margin-bottom: 16px;
    background: #fa923f;
    padding: 8px 0;
 }
+```
+- Adds spacing below the navigation, a background color, and vertical padding.
 
+```css
 a {
    text-decoration: none;
    color: white;
    margin: 10px;
 }
+```
+- Removes underline from links, colors them white, and adds margin around them.
 
+```css
 a.active {
    color: #521751;
 }
+```
+- Targets links with the class `active` and overrides their color.
 
+```css
 a {
    color: blue;
 }
+```
+- A later rule that overrides all `<a>` tag color to blue. This makes `.active` less effective unless specificity is increased.
 
+```css
 .main-section {
    height: 800px;
    border: 1px solid #ccc !important;
    padding: 16px;
 }
+```
+- Creates tall section boxes with borders and padding. `!important` enforces the border style.
 
+```css
 .highlighted {
    border: 2px solid #ea5c24;
    height: 200px;
 }
 ```
+- For highlighted sections, applies a thicker orange border and sets a smaller height.
 
-### Notes
-
-- `a.active`: Targets `<a>` elements with class `active`.
-- `.main-section.highlighted`: Applies both `main-section` and `highlighted` styles to the same section.
-- Order of CSS matters: the later `a { color: blue; }` overrides the previous `a { color: white; }` unless more specific.
-- `!important`: Forces the border style even if other styles conflict.
-- Combined classes can refine layout and design without duplication.
-
-
-### !important Keyword
+#### !important 
+keyword in CSS is used to give a CSS rule higher priority over other conflicting rules. When !important is added to a CSS property, that property will always be applied, regardless of the specificity of other rules. However, it should be used sparingly as it can make the CSS code harder to maintain and override.
 
 Used to force rule priority:
 ```css
@@ -888,32 +883,60 @@ p {
   color: red !important;
 }
 ```
+</details>
 
-## `calc()` Usage
 
-Example: `calc(50% - 240px)` centers an element of fixed width horizontally.
+<details>
+  <summary>CSS Pseudo-Selectors, `calc()`, and Geometric Shapes with CSS</summary>
 
-## Pseudo-Class Example
+#### Pseudo-Selectors
 
+Common Link States
 ```css
-a:link { color: red; }
-a:visited { color: green; }
-a:hover { color: magenta; }
-a:active { color: blue; }
+/* Unvisited link */
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+/* Explicit unvisited link */
+a:link {
+    color: #FF0000;
+}
+
+/* Visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* Hover (mouse over) */
+a:hover {
+    color: #FF00FF;
+}
+
+/* Active (mouse is currently clicking the link) */
+a:active {
+    color: #0000FF;
+}
 ```
 
-## Button Interaction Example
+Action Button with Pseudo-Selectors
 
 ```html
-<button class="button">CHOOSE PLAN</button>
+<div>
+  <button class="button">CHOOSE PLAN</button>
+</div>
 ```
 
 ```css
 .button {
   background: #0e4f1f;
   color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
   padding: 8px;
   border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -921,18 +944,62 @@ a:active { color: blue; }
   background: white;
   color: #0e4f1f;
 }
+
+.button:focus {
+  outline: none;
+}
 ```
-## border-radius: 50%
 
-Used to make circles or rounded elements. Can specify 1-4 values or use percentages or pixel units.
+#### `calc(50% - 240px)`
 
-This document is a comprehensive reference to CSS syntax, designed to assist with everyday frontend work.
+This is a CSS expression used to calculate layout values, especially for positioning and sizing elements.
+
+- `50%` represents half of the available width or height of the containing element.
+- `- 240px` subtracts 240 pixels from that value.
+
+This is typically used to **center an element horizontally** within its container. By subtracting **half of the element’s fixed width**, you effectively shift it left so that it's centered.
+
+**Example:**  
+If a container is `1000px` wide and the element is `480px` wide,  
+`calc(50% - 240px)` will position the element so its left edge is 240px left of the center—perfectly centered.
+
+#### Creating Geometric Shapes with HTML and CSS
+
+You can use CSS properties like:
+
+- `width`, `height`
+- `background-color`
+- `border`
+- `border-radius`
+- `position`
+
+For example: `border-radius: 50%`
+
+This creates **curved corners** or even perfect **circles**.
+
+- `border-radius` accepts one to four values to define the roundness of each corner.
+- Units can be pixels, percentages, or other length units.
+- If fewer than four values are provided, the browser assumes symmetry starting from the top-left corner and rotating clockwise.
+
+```css
+/* Circle */
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+```
 </details>
+</details>
+
+
 
 <details>
   <summary>Box Model</summary>
   
-## 📦 Box Model Components
+- [Box model](https://cssreference.io/box-model/)
+### 📦 Box Model Components
 
 The **Box Model** includes the following layers (from innermost to outermost):
 
@@ -944,15 +1011,15 @@ The **Box Model** includes the following layers (from innermost to outermost):
 ![Box Model](./theboxmodal.jpg "Box Model")
 
 
-## Dimensions & Spacing
+### Dimensions & Spacing
 
-### Width & Height
+#### Width & Height
 ```css
 width: 300px;
 height: auto;
 ```
 
-### Padding
+#### Padding
 ```css
 padding: 15px;
 /* or specify each side individually */
@@ -962,7 +1029,7 @@ padding-bottom: 15px;
 padding-left: 15px;
 ```
 
-### Border
+#### Border
 ```css
 border: 10px solid skyblue;
 /* or specify each side */
@@ -972,7 +1039,7 @@ border-left-color: skyblue;
 ...
 ```
 
-### Margin
+#### Margin
 ```css
 margin: 30px;
 /* or specify each side */
@@ -982,15 +1049,13 @@ margin-bottom: 30px;
 margin-left: 30px;
 ```
 
-## Additional Properties
-
+#### Additional Properties
 - `box-shadow`: Adds shadow around the box.
 - `box-sizing`: Defines whether `width/height` include padding and border.
 - `max-width`, `max-height`, `min-width`, `min-height`: Set size constraints.
 - `mix-blend-mode`: Defines how the box blends with background.
 
-
-## HTML Example
+Example
 
 ```html
 <div class="box">
@@ -1000,9 +1065,6 @@ margin-left: 30px;
   Homework 3 will be released tonight.
 </div>
 ```
-
-### CSS
-
 ```css
 .box {
    background-color: white;
@@ -1012,19 +1074,16 @@ margin-left: 30px;
    margin: 30px;
 }
 ```
-
 > We can have different amounts of spacing on different sides of the box. The four sides are: **top, right, bottom, and left**.
 
-## Clockwise Shorthand Example
+Clockwise Shorthand Example
 ```css
 /* top right bottom left */
 padding: 16px 16px 16px 16px;
 margin: 16px 16px 16px 16px;
 ```
 
-
 ## Height & Width Values
-
 ```css
 width: 100%;
 height: 100%;
@@ -1032,6 +1091,11 @@ width: 300px;
 height: 128px;
 ```
 </details>
+
+
+
+
+
 
 <details>
   <summary>Layout</summary>
@@ -1732,6 +1796,13 @@ body {
   padding: 2em;
 }
 ```
+</details>
+
+
+<details>
+  <summary>	Grid</summary>
+  
+  
 </details>
 
 
