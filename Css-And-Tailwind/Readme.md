@@ -1917,7 +1917,7 @@ The `filter` property applies graphical effects like blurring or color shifting 
 
 
 <details>
-  <summary>Animations- Transform & Transition</summary>
+  <summary>Animations - Transform & Transition</summary>
 
   With animations, we can create really nice, dynamic websites. Effectively allowing to express our brands or identities in ways we haven’t before.
   - [Animations](https://cssreference.io/animations/)
@@ -2267,23 +2267,1795 @@ Match all screens between 200px and 400px:
 - **1201px and up**: Extra large screens, TVs
 </details>
 
-### Tailwind CSS utility classes 
-- [Tailwind CSS utility classes](https://tailwindcss.com/docs/aspect-ratio)
+---
 
 <details>
-  <summary>comparison of CSS and Tailwind CSS</summary>
+  <summary>Should You Learn a CSS Framework?</summary>
 
-Here’s a comparison of common CSS tags (properties) and their equivalent Tailwind CSS utility classes. This will help you understand how to translate traditional CSS properties into Tailwind classes.
+Whether or not you should learn a CSS framework depends on your goals, the types of projects you want to work on, and your current CSS knowledge.
 
-![Tailwind ](./tailwind-1.jpg "Tailwind ")
+## ✅ Benefits of Learning a CSS Framework:
+### 1. Faster Development
+Frameworks like **Bootstrap**, **Bulma**, or **Tailwind CSS** come with prebuilt components and styles that let you build responsive websites quickly, without writing CSS from scratch. This is especially helpful for large projects or prototypes.
 
-![Tailwind ](./tailwind-2.jpg "Tailwind ")
+### 2. Responsive Design
+Most modern CSS frameworks are mobile-first and responsive out of the box. You can create layouts that adapt to different screen sizes without worrying too much about media queries.
 
-![Tailwind ](./tailwind-3.jpg "Tailwind ")
+### 3. Design Consistency
+CSS frameworks ensure a consistent design across your project. Since components are pre-designed, you don’t have to worry about inconsistent spacing, layout, or typography.
 
-![Tailwind ](./tailwind-4.jpg "Tailwind ")
+### 4. Cross-Browser Compatibility
+CSS frameworks are built with cross-browser compatibility in mind. They include CSS normalization, helping your site look consistent across different browsers with minimal extra work.
+
+### 5. Community Support
+Popular frameworks like Bootstrap have strong documentation and large communities. This makes it easier to find solutions or get help when you're stuck.
+
+## When You Might Not Need a Framework:
+### 1. Small or Simple Projects
+If you’re building a basic site with just a few components, using a full CSS framework might be overkill. Custom CSS can be faster and lighter.
+
+### 2. Full Design Control
+If you want total creative freedom over your site’s design, frameworks might feel restrictive due to their predefined styles. Writing your own CSS from scratch may be better for unique or highly custom designs.
+
+### 3. Learning Core CSS
+If you’re still learning CSS fundamentals (e.g., Flexbox, Grid, responsive design), focus on these first. Once you're confident, learning frameworks becomes easier and more useful—especially for customizing components.
+
+### 4. Performance Concerns
+CSS frameworks can be heavy since they include many styles and components you might never use. For performance-focused apps or sites, custom CSS can be more efficient.
+
+## Popular CSS Frameworks:
+### 1. **Bootstrap**
+- Most popular framework
+- Wide range of components
+- Responsive grid system
+- Great for rapid prototyping
+- Can be heavy
+
+### 2. **Bulma**
+- Lightweight and modern
+- Uses Flexbox
+- Known for being easy to customize
+
+### 3. **Tailwind CSS**
+- Utility-first framework
+- Full design control
+- Doesn’t provide components, but gives utility classes to build your own
+
+### 4. **Foundation**
+- Focuses on accessibility
+- Responsive and robust
+- Slightly less popular than Bootstrap, but still powerful
+
+## Should You Learn One?
+- **Yes**, if you're going into **web development (especially frontend)** or plan to work with UI frameworks like React, Angular, or Vue. Many of these integrate well with CSS libraries.
+- **No**, if you're doing **art-oriented web projects** or want **deeply custom designs**, especially when performance is critical or you're still learning CSS basics.
+
+
+## ✅ Recommendation for You as a UI/UX Designer:
+
+I recommend **Tailwind CSS** based on your background in design and frontend development.
+
+### Why Tailwind CSS?
+- **Flexibility & Customization**: Tailwind lets you style components directly in HTML with utility classes. This gives you creative freedom—great for your art/design-oriented workflow.
+- **Responsive & Modern**: Tailwind is mobile-first and includes built-in responsive features. Ideal for modern UI/UX work, allowing quick prototyping and adjustments across devices.
+- **Lightweight & Performant**: Tailwind only generates the CSS you use. Compared to frameworks like Bootstrap, it’s more performance-friendly—perfect when you care about both aesthetics and performance.
+- **Developer-Focused**: Since you're transitioning to React and modern frontend tools, Tailwind integrates beautifully with them. It's a favorite among many frontend developers for custom design work.
+
+> 🔄 If you want more prebuilt components, you might consider **Bulma** or **Bootstrap**. But for **full design control**, **Tailwind** is the best fit for your goals!
+</details>
+
+<details>
+  <summary>Vanilla CSS vs CSS Frameworks</summary>
+
+When deciding between using **Vanilla CSS** (writing raw CSS without any frameworks) and a **CSS framework**, you must consider your project needs, design goals, and your level of CSS proficiency.
+
+## What is Vanilla CSS?
+Vanilla CSS means using pure native CSS without relying on external libraries or frameworks.
+
+### Pros of Vanilla CSS:
+- **Full Control**: You have complete control over every aspect of your design, allowing for custom layouts and unique styles. There are no default constraints from a framework.
+- **Lightweight**: You only write the styles you need. There's no unused utility or component code adding bloat.
+- **Deeper Understanding**: It helps you learn how CSS really works — essential for mastering responsive design, animations, Flexbox, Grid, and other advanced features.
+- **Performance**: Since you're writing custom code, you can optimize CSS for performance. Browsers won't need to parse unused styles, which can improve loading times.
+
+### Cons of Vanilla CSS:
+- **Time-Consuming**: Writing and maintaining CSS for large projects takes time, especially when handling responsiveness and cross-browser compatibility.
+- **Reinventing the Wheel**: You often have to write styles for common UI patterns (buttons, grids, modals) from scratch.
+- **No Pre-Built Components**: Every element (buttons, cards, modals) must be written manually, which slows down development for complex projects.
+
+
+## What is a CSS Framework?
+CSS frameworks like **Bootstrap**, **Bulma**, or **Tailwind CSS** provide pre-built components and utility classes to speed up development.
+
+### Pros of CSS Frameworks:
+- **Rapid Prototyping**: Use ready-made components (buttons, navbars, grids) to build prototypes quickly.
+- **Responsive by Default**: Most frameworks are mobile-first and include responsive grids, eliminating the need for custom media queries.
+- **Consistency**: Predefined components ensure visual and structural consistency throughout a project.
+- **Cross-Browser Compatibility**: Frameworks are tested across browsers and devices, reducing the need for custom fixes.
+- **Great Documentation & Community**: Frameworks have extensive docs and large communities for support and tutorials.
+
+###  Cons of CSS Frameworks:
+- **Less Flexibility**: Frameworks can limit custom or complex designs. You may need to fight default styles or override large amounts of CSS.
+- **Potential Bloat**: Frameworks may include lots of CSS you don’t use. While modern tools like Tailwind are modular, traditional frameworks like Bootstrap can still be bulky if not managed properly.
+- **Learning Curve**: Frameworks come with their own class systems and conventions — you must learn how to use them effectively.
+
+## When to Use Vanilla CSS:
+- **Custom Designs**: If you need unique, highly customized layouts.
+- **Small Projects**: For simple websites with few components.
+- **Learning CSS**: Ideal for developing a deep understanding of CSS fundamentals.
+
+## When to Use CSS Frameworks:
+- **Large Projects**: Speeds up development with built-in components and responsive systems.
+- **Design Consistency**: Enforces uniform style across complex UIs.
+- **Prototyping**: Build MVPs or quick design mockups rapidly.
+
+## Summary
+| Approach         | Best For                                    | Pros                             | Cons                          |
+|------------------|----------------------------------------------|----------------------------------|-------------------------------|
+| **Vanilla CSS**  | Custom design, small projects, learning CSS | High flexibility, full control   | Time-consuming, no components |
+| **CSS Framework**| Rapid dev, large apps, consistent UIs       | Fast, consistent, responsive     | Less flexible, potential bloat|
+
+## Recommendation for You
+As a **UI/UX designer and developer**, learning **both Vanilla CSS and frameworks (like Tailwind CSS)** is very beneficial:
+- Vanilla CSS will give you a **strong foundation** and understanding.
+- CSS frameworks will help you **build faster**, more maintainable, and **responsive designs**.
+</details>
+
+<details>
+  <summary>CSS, SCSS, SASS, and Less</summary>
+
+CSS, SCSS, SASS, and Less are all stylesheets used to define the visual presentation of web pages, but they differ in features and syntax.
+
+- **CSS (Cascading Style Sheets):** The standard stylesheet language used to style HTML elements. It is supported by all browsers and does not require any compilation.
+
+- **SASS (Syntactically Awesome Stylesheets):** A CSS preprocessor that extends CSS with features like variables, nested rules, mixins, and functions. SASS uses indentation-based syntax (no curly braces or semicolons).
+
+- **SCSS (Sassy CSS):** A newer syntax of SASS that is more similar to traditional CSS. It supports all the features of SASS but uses curly braces and semicolons like CSS, making it easier to learn for those familiar with CSS.
+
+- **Less:** Another CSS preprocessor similar to SASS/SCSS, with features like variables, mixins, and nesting. Less is often used in legacy codebases and integrates well with tools like Bootstrap.
+
+### 🔍 Summary
+| Language | Syntax Style | Requires Compilation | Features |
+|----------|---------------|-----------------------|----------|
+| CSS      | Plain CSS     | No                    | Basic styling |
+| SCSS     | CSS-like      | Yes                   | Variables, nesting, mixins, functions |
+| SASS     | Indented      | Yes                   | Same as SCSS but different syntax |
+| Less     | CSS-like      | Yes                   | Similar to SCSS, used in Bootstrap 3/4 |
+
+These tools enhance productivity and maintainability in large-scale frontend projects.
+
+### 📚 Resources
+- [SASS/SCSS Official Website](https://sass-lang.com/)
+- [Less CSS Documentation](http://lesscss.org/)
+- [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS)
 </details>
 
 
+
+
+
+### Tailwind CSS utility classes 
+
+- [Tailwind CSS utility classes](https://tailwindcss.com/docs/aspect-ratio)
+
+<details>
+  <summary>Tailwind CSS Basic Environment Setup</summary>
+
+This guide covers two ways to set up Tailwind CSS: a quick CDN approach for prototyping, and a full development build setup using Vite.
+
+### Option 1: Quick Setup with CDN (Prototyping Only)
+
+**Steps:**
+
+1. Create an `index.html` file with the following content:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CDN</title>
+  </head>
+  <body class="bg-slate-100 p-10">
+    <h1 class="text-3xl font-bold text-purple-700">Hello, Tailwind!</h1>
+  </body>
+</html>
+```
+2. Open the file in a browser.
+
+✅ Great for testing ideas. ❌ Not recommended for production.
+
+### Option 2: Full Tailwind Setup with Vite (Recommended)
+
+**Prerequisites:**
+- Node.js
+- Terminal
+- VS Code (or another editor)
+
+**Steps:**
+
+#### 1. Create a Vite project:
+```bash
+npm create vite@latest my-tailwind-app --template vanilla
+cd my-tailwind-app
+npm install
+```
+
+#### 2. Install Tailwind CSS:
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+#### 3. Configure `tailwind.config.js`:
+```js
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+#### 4. Add Tailwind to your CSS (`src/index.css`):
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+#### 5. Import CSS in your `main.js`:
+```js
+import './index.css'
+```
+
+#### 6. Start the development server:
+```bash
+npm run dev
+```
+
+**Example UI Block:**
+```html
+<div class="p-8 max-w-md mx-auto bg-white rounded-xl shadow-md space-y-4">
+  <h1 class="text-2xl font-bold text-gray-900">Hello Tailwind!</h1>
+  <p class="text-gray-500">Ready to vibe code with utility classes 🌈</p>
+</div>
+```
+
+**Resources**
+- https://tailwindcss.com/docs/installation
+- https://play.tailwindcss.com/
+- https://vitejs.dev/
+</details>
+
+
+<details>
+  <summary>utility-first</summary>
+
+- [utility-first](https://codepen.io/Weijie-Xi/pen/BaXmPGm)
+
+This example demonstrates how to build a styled alert component using both custom CSS and Tailwind utility-first classes.
+
+### HTML/CSS Version
+Uses custom classes with traditional CSS styles:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Utility First Fundamentals</title>
+   <style>
+     body {
+       margin-top: 200px !important;
+     }
+     .alert {
+       display: flex;
+       max-width: 24rem;
+       margin: 0 auto;
+       padding: 1.5rem;
+       border-radius: 0.5rem;
+       background-color: #fff;
+       box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+         0 10px 10px -5px rgba(0, 0, 0, 0.04);
+     }
+     .alert-logo-wrap {
+       flex-shrink: 0;
+     }
+     .alert-logo {
+       height: 3rem;
+       width: 3rem;
+     }
+     .alert-body {
+       margin-left: 1.5rem;
+       padding-top: 0.25rem;
+     }
+     .alert-title {
+       color: #1a202c;
+       font-size: 1.25rem;
+       line-height: 1.25;
+       font-weight: 500;
+     }
+     .alert-message {
+       color: #718096;
+       font-size: 1rem;
+       line-height: 1.5;
+     }
+   </style>
+ </head>
+
+
+ <body>
+   <!-- HTML/CSS Version -->
+   <div class="alert">
+     <div class="alert-logo-wrap">
+       <img class="alert-logo" src="../assets/img/warning.svg" alt="alert" />
+     </div>
+     <div class="alert-body">
+       <h4 class="alert-title">Are You Sure?</h4>
+       <p class="alert-message">You are about to delete a post</p>
+     </div>
+   </div>
+
+</div>
+```
+
+### Tailwind CSS Version
+Uses utility classes to style directly in HTML:
+
+```html
+<div class="flex items-center p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-x-4">
+  <img class="h-12 w-12" src="../assets/img/warning.svg" alt="alert" />
+  <div>
+    <div class="text-xl font-medium text-black">Are You Sure?</div>
+    <p class="text-slate-500">You are about to delete a post</p>
+  </div>
+</div>
+```
+
+### Tailwind Class Translations (To Plain CSS)
+
+| Tailwind Class | Equivalent CSS |
+|----------------|----------------|
+| `flex` | `display: flex;` |
+| `items-center` | `align-items: center;` |
+| `p-6` | `padding: 1.5rem;` |
+| `max-w-sm` | `max-width: 24rem;` |
+| `mx-auto` | `margin-left: auto; margin-right: auto;` |
+| `bg-white` | `background-color: white;` |
+| `rounded-xl` | `border-radius: 0.75rem;` |
+| `shadow-lg` | `box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);` |
+| `space-x-4` | `column-gap: 1rem;` (horizontal spacing between flex items) |
+| `h-12 w-12` | `height: 3rem; width: 3rem;` |
+| `text-xl font-medium text-black` | `font-size: 1.25rem; font-weight: 500; color: black;` |
+| `text-slate-500` | `color: #718096;` |
+
+### 💡 Summary
+Using Tailwind makes layout faster and cleaner by removing the need for extra CSS. Utility classes map directly to common CSS properties and help maintain consistent design quickly.
+</details>
+
+
+<details>
+  <summary>colors</summary>
+
+  - [color](https://codepen.io/Weijie-Xi/pen/poMdZqx)
+
+This document summarizes how Tailwind CSS color utility classes map to CSS and how to use them effectively for styling HTML elements.
+
+### Text Colors
+```html
+<p class="text-black">Tailwind is awesome</p>       /* color: black; */
+<p class="text-red-50">Tailwind is awesome</p>       /* color: #FECACA; */
+<p class="text-red-100">Tailwind is awesome</p>      /* color: #FCA5A5; */
+<p class="text-red-200">Tailwind is awesome</p>      /* color: #F87171; */
+<p class="text-red-300">Tailwind is awesome</p>      /* color: #EF4444; */
+<p class="text-red-400">Tailwind is awesome</p>      /* color: #DC2626; */
+<p class="text-red-500">Tailwind is awesome</p>      /* color: #B91C1C; */
+<p class="text-red-600">Tailwind is awesome</p>      /* color: #991B1B; */
+<p class="text-red-700">Tailwind is awesome</p>      /* color: #7F1D1D; */
+<p class="text-red-800">Tailwind is awesome</p>      /* color: #641E1E; */
+<p class="text-red-900">Tailwind is awesome</p>      /* color: #4B1F1F; */
+<p class="text-[#BF5FC6]">Tailwind is awesome</p>     /* color: #BF5FC6; */
+```
+
+### Background Colors
+```html
+<div class="bg-slate-600 text-white">Tailwind is awesome</div>      /* background-color: #4a5568; */
+<div class="bg-zinc-400 text-white">Tailwind is awesome</div>       /* background-color: #cbd5e1; */
+<div class="bg-emerald-600 text-white">Tailwind is awesome</div>    /* background-color: #2f855a; */
+```
+
+### Text Decoration
+```html
+<p class="underline text-red-700 decoration-red-700">
+  Tailwind is awesome
+</p>  /* underline with red color */
+```
+
+### Border Colors
+```html
+<input class="border-2 border-rose-500" />        /* border: 2px solid #f43f5e; */
+<input class="border-2 border-blue-300" />
+<input class="border-2 border-purple-900" />
+<input class="border-2 border-yellow-500" />
+```
+
+### Divide Colors
+```html
+<div class="divide-y divide-blue-200">
+  <div>Item 1</div>
+  <div>Item 2</div>
+</div>  /* divider border: 1px solid #bfdbfe; */
+```
+
+### Outline Colors
+```html
+<button class="outline outline-blue-500">Subscribe</button>  /* outline: 2px solid #3b82f6; */
+```
+
+### Box Shadow with Colors
+```html
+<button class="bg-cyan-500 shadow-lg shadow-cyan-500">
+  Subscribe
+</button>  /* bg: #06b6d4; shadow with rgba blend of same */
+```
+
+### Accent Colors
+```html
+<input type="checkbox" class="accent-purple-500" checked /> Option 1
+<input type="checkbox" class="accent-pink-500" checked /> Option 2
+<input type="checkbox" class="accent-red-300" checked /> Option 3
+```
+These apply color to interactive form elements like checkboxes and radios.
+
+### Arbitrary Colors
+```html
+<div class="bg-[#427fab] h-10">Hello</div>         /* background-color: #427fab; */
+<div class="text-[#427fab] h-10">Hello</div>       /* color: #427fab; */
+<div class="border border-[#427fab] h-10">Hello</div> /* border-color: #427fab; */
+```
+Use Tailwind’s arbitrary value syntax when you want a custom color not in the default palette.
+
+
+**Text Color Utilities**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `text-black` | `color: black;` |
+| `text-red-50` | `color: #FECACA;` |
+| `text-red-100` | `color: #FCA5A5;` |
+| `text-red-200` | `color: #F87171;` |
+| `text-red-300` | `color: #EF4444;` |
+| `text-red-400` | `color: #DC2626;` |
+| `text-red-500` | `color: #B91C1C;` |
+| `text-red-600` | `color: #991B1B;` |
+| `text-red-700` | `color: #7F1D1D;` |
+| `text-red-800` | `color: #641E1E;` |
+| `text-red-900` | `color: #4B1F1F;` |
+| `text-[#BF5FC6]` | `color: #BF5FC6;` |
+
+**Background Color Utilities**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `bg-slate-600` | `background-color: #4a5568;` |
+| `bg-zinc-400` | `background-color: #cbd5e1;` |
+| `bg-emerald-600` | `background-color: #2f855a;` |
+| `bg-cyan-500` | `background-color: #06b6d4;` |
+| `bg-[#427fab]` | `background-color: #427fab;` |
+
+**Text + Decoration Combo**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `underline text-red-700 decoration-red-700` | `text-decoration: underline; color: #b91c1c; text-decoration-color: #b91c1c;` |
+
+**Border Utilities**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `border-2 border-rose-500` | `border-width: 2px; border-color: #f43f5e;` |
+| `border border-[#427fab]` | `border-width: 1px; border-color: #427fab;` |
+
+**Divider Utility**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `divide-y divide-blue-200` | `border-top: 1px solid #bfdbfe; border-bottom: 1px solid #bfdbfe;` |
+
+**Outline Utility**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `outline outline-blue-500` | `outline: 2px solid #3b82f6;` |
+
+**Shadow Utility**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `shadow-lg shadow-cyan-500` | `box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.5), 0 4px 6px -2px rgba(6, 182, 212, 0.5);` |
+
+**Accent Color Utility**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `accent-purple-500` | `accent-color: #7e22ce;` — This sets the accent color for interactive form elements such as checkboxes, radio buttons, and other controls that support accent-color styling. |
+
+**Height + Custom Color**
+| Class | CSS Equivalent |
+|-------|----------------|
+| `h-10` | `height: 2.5rem;` |
+| `text-[#427fab] h-10` | `color: #427fab; height: 2.5rem;` |
+</details>
+
+<details>
+  <summary>container-spacing</summary>
+
+- [container-spacing](https://codepen.io/Weijie-Xi/pen/vYopNRL)
+### Container Class & Breakpoints
+`class="container mx-auto"` centers the content and adds responsive max-width.
+
+| Breakpoint | Max Width        |
+|------------|------------------|
+| none       | 100%             |
+| sm (640px) | 640px            |
+| md (768px) | 768px            |
+| lg (1024px)| 1024px           |
+| xl (1280px)| 1280px           |
+| 2xl (1536px)| 1536px          |
+
+### Margin Classes
+| Class      | CSS Output                           |
+|------------|---------------------------------------|
+| `m-4`      | `margin: 1rem`                        |
+| `mx-4`     | `margin-left: 1rem; margin-right: 1rem` |
+| `my-4`     | `margin-top: 1rem; margin-bottom: 1rem` |
+| `mt-6`     | `margin-top: 1.5rem`                  |
+| `mr-4`     | `margin-right: 1rem`                 |
+| `mb-8`     | `margin-bottom: 2rem`                |
+| `ml-2`     | `margin-left: 0.5rem`                |
+| `ml-[200px]` | `margin-left: 200px`              |
+
+**Special Margin Values**
+- `m-0` – `margin: 0px`
+- `m-px` – `margin: 1px (0.0625rem)`
+- `m-0.5` – `margin: 0.125rem`
+- `m-auto` – `margin: auto` (centers content)
+
+### Padding Classes
+| Class      | CSS Output                           |
+|------------|---------------------------------------|
+| `p-4`      | `padding: 1rem`                       |
+| `px-4`     | `padding-left/right: 1rem`            |
+| `py-4`     | `padding-top/bottom: 1rem`            |
+| `pt-6`     | `padding-top: 1.5rem`                 |
+| `pr-4`     | `padding-right: 1rem`                 |
+| `pb-8`     | `padding-bottom: 2rem`                |
+| `pl-2`     | `padding-left: 0.5rem`                |
+| `pl-[200px]` | `padding-left: 200px`              |
+
+**Special Padding Values**
+- `p-0`, `p-px`, `p-0.5`, `p-auto` – same behavior as margin equivalents
+
+### Space Between Elements
+
+**Horizontal**
+```html
+<div class="flex space-x-4">...</div>
+```
+- `space-x-4` adds `gap: 1rem` between children on the x-axis.
+
+**Vertical**
+```html
+<div class="flex flex-col space-y-4">...</div>
+```
+- `space-y-4` adds `gap: 1rem` between children on the y-axis.
+
+**Tailwind Example**
+```html
+<div class="p-3 bg-red-100">01</div>
+```
+- Adds `padding: 0.75rem` and background color `#fee2e2` (red-100)
+</details>
+
+
+<details>
+  <summary>typography</summary>
+
+  - [typography](https://codepen.io/Weijie-Xi/pen/vYopGZQ)
+
+### Font Family
+| Class        | CSS Output |
+|--------------|------------|
+| `font-sans`  | font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; |
+| `font-serif` | font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; |
+| `font-mono`  | font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; |
+
+### Font Size
+| Class      | Font Size     |
+|------------|---------------|
+| `text-xs`  | 0.75rem (12px) |
+| `text-sm`  | 0.875rem (14px) |
+| `text-base`| 1rem (16px)    |
+| `text-lg`  | 1.125rem (18px) |
+| `text-xl`  | 1.25rem (20px) |
+| `text-2xl` | 1.5rem (24px)  |
+| `text-3xl` | 1.875rem (30px) |
+| `text-4xl` | 2.25rem (36px) |
+| `text-5xl` | 3rem (48px)    |
+| `text-6xl` | 3.75rem (60px) |
+| `text-7xl` | 4.5rem (72px)  |
+| `text-8xl` | 6rem (96px)    |
+| `text-9xl` | 8rem (128px)   |
+| `text-[150px]` | 150px      |
+
+
+### Font Weight
+| Class            | Weight |
+|------------------|--------|
+| `font-thin`      | 100    |
+| `font-extralight`| 200    |
+| `font-light`     | 300    |
+| `font-normal`    | 400    |
+| `font-medium`    | 500    |
+| `font-semibold`  | 600    |
+| `font-bold`      | 700    |
+| `font-extrabold` | 800    |
+| `font-black`     | 900    |
+
+
+### Letter Spacing
+| Class               | CSS Output          |
+|---------------------|---------------------|
+| `tracking-tighter`  | letter-spacing: -0.05em; |
+| `tracking-tight`    | letter-spacing: -0.025em; |
+| `tracking-normal`   | letter-spacing: 0em; |
+| `tracking-wide`     | letter-spacing: 0.025em; |
+| `tracking-wider`    | letter-spacing: 0.05em; |
+| `tracking-widest`   | letter-spacing: 0.1em; |
+
+
+### Text Alignment
+| Class         | CSS Output          |
+|---------------|---------------------|
+| `text-left`   | text-align: left;   |
+| `text-center` | text-align: center; |
+| `text-right`  | text-align: right;  |
+| `text-justify`| text-align: justify;|
+
+### Text Decoration
+
+**Thickness**
+| Class                  | Output                       |
+|------------------------|------------------------------|
+| `decoration-auto`      | text-decoration-thickness: auto; |
+| `decoration-from-font` | text-decoration-thickness: from-font; |
+| `decoration-0`         | text-decoration-thickness: 0px; |
+| `decoration-1`         | text-decoration-thickness: 1px; |
+| `decoration-2`         | text-decoration-thickness: 2px; |
+| `decoration-4`         | text-decoration-thickness: 4px; |
+| `decoration-8`         | text-decoration-thickness: 8px; |
+
+**Text Transform**
+| Class          | CSS Output              |
+|----------------|-------------------------|
+| `uppercase`    | text-transform: uppercase; |
+| `lowercase`    | text-transform: lowercase; |
+| `capitalize`   | text-transform: capitalize; |
+| `normal-case`  | text-transform: none; |
+</details>
+
+
+
+<details>
+  <summary>sizing</summary>
+
+  - [sizing](https://codepen.io/Weijie-Xi/pen/qEdPNpy)
+  
+### HTML Example Overview
+
+This HTML demonstrates:
+- Width (`w-*`): from small fixed sizes to percentages and viewport units
+- Min/Max Width: flexible layout sizing
+- Height (`h-*`): including full-screen and dynamic height
+- Min/Max Height: manage how content expands or is constrained
+
+### Width Utilities
+
+Examples like:
+```html
+<div class="w-0">w-0</div>
+<div class="w-1/2">w-1/2</div>
+<div class="w-full">w-full</div>
+<div class="w-screen">w-screen</div>
+<div class="w-[300px]">300px</div>
+```
+
+### Width Scale:
+| Class     | Width Value        |
+|-----------|--------------------|
+| w-0       | 0px                |
+| w-px      | 1px                |
+| w-0.5     | 0.125rem (2px)     |
+| w-1       | 0.25rem (4px)      |
+| w-96      | 24rem (384px)      |
+| w-full    | 100%               |
+| w-screen  | 100vw              |
+| w-min     | min-content        |
+| w-max     | max-content        |
+| w-fit     | fit-content        |
+
+### Min Width
+| Class       | CSS Value        |
+|-------------|------------------|
+| min-w-0     | min-width: 0px   |
+| min-w-full  | min-width: 100%  |
+| min-w-min   | min-content      |
+| min-w-max   | max-content      |
+| min-w-fit   | fit-content      |
+
+
+### Max Width
+| Class            | Max Width Value         |
+|------------------|-------------------------|
+| max-w-xs         | 20rem (320px)           |
+| max-w-md         | 28rem (448px)           |
+| max-w-lg         | 32rem (512px)           |
+| max-w-xl         | 36rem (576px)           |
+| max-w-7xl        | 80rem (1280px)          |
+| max-w-full       | 100%                    |
+| max-w-screen-md  | 768px                   |
+| max-w-prose      | 65ch                    |
+
+
+### Height Utilities
+| Class     | Height Value       |
+|-----------|--------------------|
+| h-0       | 0px                |
+| h-0.5     | 0.125rem (2px)     |
+| h-12      | 3rem (48px)        |
+| h-96      | 24rem (384px)      |
+| h-full    | 100%               |
+| h-screen  | 100vh              |
+| h-min     | min-content        |
+| h-max     | max-content        |
+| h-fit     | fit-content        |
+
+### Min Height
+| Class         | Min Height Value     |
+|---------------|----------------------|
+| min-h-0       | 0px                  |
+| min-h-screen  | 100vh                |
+| min-h-min     | min-content          |
+| min-h-fit     | fit-content          |
+
+
+### Max Height
+| Class         | Max Height Value     |
+|---------------|----------------------|
+| max-h-0       | 0px                  |
+| max-h-12      | 3rem (48px)          |
+| max-h-96      | 24rem (384px)        |
+| max-h-full    | 100%                 |
+| max-h-screen  | 100vh                |
+| max-h-min     | min-content          |
+| max-h-max     | max-content          |
+| max-h-fit     | fit-content          |
+</details>
+
+
+
+<details>
+  <summary>layout-position</summary>
+  
+- [layout-position](https://codepen.io/Weijie-Xi/pen/dyxJMKQ)
+
+### Positioning Classes
+| Class     | CSS Equivalent           |
+|-----------|---------------------------|
+| `static`  | `position: static;`       |
+| `fixed`   | `position: fixed;`        |
+| `absolute`| `position: absolute;`     |
+| `relative`| `position: relative;`     |
+| `sticky`  | `position: sticky;`       |
+
+These classes define how an element is positioned relative to the document or its closest positioned ancestor.
+
+### Display Classes
+| Class            | CSS Equivalent             |
+|------------------|----------------------------|
+| `block`          | `display: block;`          |
+| `inline-block`   | `display: inline-block;`   |
+| `inline`         | `display: inline;`         |
+| `flex`           | `display: flex;`           |
+| `inline-flex`    | `display: inline-flex;`    |
+| `table`          | `display: table;`          |
+| `grid`           | `display: grid;`           |
+| `inline-grid`    | `display: inline-grid;`    |
+| `contents`       | `display: contents;`       |
+| `list-item`      | `display: list-item;`      |
+| `hidden`         | `display: none;`           |
+
+These determine how elements appear and interact in the document flow.
+
+### Z-Index Classes
+| Class   | CSS Equivalent     |
+|---------|--------------------|
+| `z-0`   | `z-index: 0;`       |
+| `z-10`  | `z-index: 10;`      |
+| `z-20`  | `z-index: 20;`      |
+| `z-30`  | `z-index: 30;`      |
+| `z-40`  | `z-index: 40;`      |
+| `z-50`  | `z-index: 50;`      |
+| `z-auto`| `z-index: auto;`    |
+
+Z-index controls stack order. Higher values appear in front of lower values.
+
+### Float Classes
+| Class         | CSS Equivalent     |
+|---------------|--------------------|
+| `float-right` | `float: right;`    |
+| `float-left`  | `float: left;`     |
+| `float-none`  | `float: none;`     |
+
+Floats are useful for wrapping text around images or positioning elements to the sides.
+
+
+### Practical HTML Example Included
+This document corresponds to a TailwindCSS HTML demo showing:
+- Absolute positioning relative to corners and edges
+- Display types (`inline`, `inline-block`, `block`, `hidden`)
+- Z-index stacking with multiple overlapping divs
+- Float image with text wrapping
+</details>
+
+
+<details>
+  <summary>backgrounds-shadows</summary>
+
+  -[backgrounds-shadows](https://codepen.io/Weijie-Xi/pen/WNVdwPG)
+
+### Background Utilities
+
+**Background Size**
+- `bg-auto` – `background-size: auto;`
+- `bg-cover` – `background-size: cover;`
+- `bg-contain` – `background-size: contain;`
+
+**Background Repeat**
+- `bg-repeat` – `background-repeat: repeat;`
+- `bg-no-repeat` – `background-repeat: no-repeat;`
+- `bg-repeat-x` – `background-repeat: repeat-x;`
+- `bg-repeat-y` – `background-repeat: repeat-y;`
+- `bg-repeat-round` – `background-repeat: round;`
+- `bg-repeat-space` – `background-repeat: space;`
+
+**Background Position**
+- `bg-center` – center position
+- `bg-top`, `bg-bottom`, `bg-left`, `bg-right`
+- `bg-left-top`, `bg-left-bottom`, `bg-right-top`, `bg-right-bottom`
+
+**Background Attachment**
+- `bg-fixed` – `background-attachment: fixed;`
+- `bg-local` – `background-attachment: local;`
+- `bg-scroll` – `background-attachment: scroll;`
+
+### Gradients
+```html
+<div class="h-24 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+<div class="h-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+```
+
+###  Shadows
+
+**Shadow Sizes**
+- `shadow-sm` – subtle small shadow
+- `shadow` – default soft shadow
+- `shadow-md`, `shadow-lg`, `shadow-xl`, `shadow-2xl` – progressively larger
+- `shadow-inner` – inner inset shadow
+- `shadow-none` – removes any shadow
+
+**Shadow Example**
+```html
+<div class="w-96 p-3 shadow-md">Shadow md example</div>
+<div class="w-96 p-3 shadow-xl shadow-blue-500/50">Shadow with blue tint</div>
+```
+
+**Shadow Colors**
+- `shadow-[color]/[opacity]`
+- Example: `shadow-blue-500/50`, `shadow-red-500/100`
+
+### Mix Blend Modes
+
+Use `mix-blend-...` to control how elements blend visually:
+```html
+<div class="mix-blend-multiply bg-blue-400">Blue Block</div>
+<div class="mix-blend-multiply bg-pink-400">Pink Block</div>
+```
+- Common classes: `mix-blend-normal`, `multiply`, `screen`, `overlay`, `darken`, `lighten`, etc.
+
+### HTML Snippet Sample
+```html
+<body>
+  <!-- Background Image -->
+  <div
+    class="h-64 w-72 bg-blue-500 bg-cover bg-no-repeat bg-center"
+    style="background-image: url('../assets/img/img1.jpg')"
+  ></div>
+
+  <!-- Gradients -->
+  <div class="h-24 bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+  <div class="h-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></div>
+
+  <!-- Shadows -->
+  <div class="w-96 p-3 shadow-md">Shadow md example</div>
+  <div class="w-96 p-3 shadow-xl shadow-blue-500/50">Blue shadow</div>
+  <div class="w-96 p-3 shadow-xl shadow-red-500/100">Red shadow</div>
+
+  <!-- Blend Mode -->
+  <div class="flex justify-center -space-x-24">
+    <div class="mix-blend-multiply bg-blue-400">Blue</div>
+    <div class="mix-blend-multiply bg-pink-400">Pink</div>
+  </div>
+</body>
+```
+</details>
+
+
+
+<details>
+  <summary>borders</summary>
+
+- [borders](https://codepen.io/Weijie-Xi/pen/rNXpePp)
+
+### Border Width & Colors
+
+```html
+<div class="border">Default border (1px)</div>
+<div class="border-2 border-blue-500">2px blue border</div>
+<div class="border-4 border-red-500">4px red border</div>
+<div class="border-x-2 border-zinc-500">2px border on left and right</div>
+<div class="border-y-2 border-zinc-500">2px border on top and bottom</div>
+<div class="border-r-2 border-zinc-500">2px border on right only</div>
+<div class="border-l-2 border-zinc-500">2px border on left only</div>
+<div class="border-b-2 border-zinc-500">2px border on bottom only</div>
+<div class="border-t-2 border-zinc-500">2px border on top only</div>
+```
+
+### Border Width Classes
+| Class         | CSS                          |
+|---------------|-------------------------------|
+| `border-0`    | border-width: 0px;            |
+| `border`      | border-width: 1px;            |
+| `border-2`    | border-width: 2px;            |
+| `border-4`    | border-width: 4px;            |
+| `border-8`    | border-width: 8px;            |
+
+### Border Sides
+- `border-x-*`: left & right
+- `border-y-*`: top & bottom
+- `border-t-*`, `border-r-*`, `border-b-*`, `border-l-*`: individual sides
+
+### Border Radius
+
+```html
+<div class="rounded">4px rounded corners</div>
+<div class="rounded-lg">8px rounded corners</div>
+<div class="rounded-xl">12px rounded corners</div>
+<div class="rounded-2xl">16px rounded corners</div>
+<div class="rounded-3xl">24px rounded corners</div>
+<div class="rounded-full">Fully rounded (pill or circle)</div>
+```
+
+**Border Radius Classes**
+| Class           | CSS                        |
+|------------------|-----------------------------|
+| `rounded-none`   | border-radius: 0px;          |
+| `rounded-sm`     | border-radius: 2px;          |
+| `rounded`        | border-radius: 4px;          |
+| `rounded-md`     | border-radius: 6px;          |
+| `rounded-lg`     | border-radius: 8px;          |
+| `rounded-xl`     | border-radius: 12px;         |
+| `rounded-2xl`    | border-radius: 16px;         |
+| `rounded-3xl`    | border-radius: 24px;         |
+| `rounded-full`   | border-radius: 9999px;       |
+
+### Outline
+
+```html
+<button class="outline outline-offset-2 outline-1">Button 1</button>
+<button class="outline outline-offset-2 outline-2">Button 2</button>
+<button class="outline outline-offset-2 outline-4">Button 3</button>
+```
+
+**Outline Width Classes**
+| Class         | CSS                    |
+|---------------|-------------------------|
+| `outline-0`   | outline-width: 0px;     |
+| `outline-1`   | outline-width: 1px;     |
+| `outline-2`   | outline-width: 2px;     |
+| `outline-4`   | outline-width: 4px;     |
+| `outline-8`   | outline-width: 8px;     |
+
+### Tips
+- Use `border-*` classes to visually separate or emphasize elements.
+- Use `rounded-*` for modern, soft UI shapes.
+- Use `outline` for focus states or button accessibility.
+</details>
+
+
+<details>
+  <summary>filters</summary>
+
+  - [filters](https://codepen.io/Weijie-Xi/pen/MWNryRv)
+
+  ### HTML Example Structure
+Each section demonstrates filter utilities applied to text or images:
+
+### Tailwind Filter Class Reference
+
+**Blur Classes**
+| Class | CSS Equivalent |
+|-------|----------------|
+| blur-none | filter: blur(0); |
+| blur-sm | filter: blur(4px); |
+| blur | filter: blur(8px); |
+| blur-md | filter: blur(12px); |
+| blur-lg | filter: blur(16px); |
+| blur-xl | filter: blur(24px); |
+| blur-2xl | filter: blur(40px); |
+| blur-3xl | filter: blur(64px); |
+
+**Brightness Classes**
+| Class | CSS Equivalent |
+|-------|----------------|
+| brightness-0 | filter: brightness(0); |
+| brightness-50 | filter: brightness(0.5); |
+| brightness-75 | filter: brightness(0.75); |
+| brightness-90 | filter: brightness(0.9); |
+| brightness-95 | filter: brightness(0.95); |
+| brightness-100 | filter: brightness(1); |
+| brightness-105 | filter: brightness(1.05); |
+| brightness-110 | filter: brightness(1.1); |
+| brightness-125 | filter: brightness(1.25); |
+| brightness-150 | filter: brightness(1.5); |
+| brightness-200 | filter: brightness(2); |
+
+**Contrast Classes**
+| Class | CSS Equivalent |
+|-------|----------------|
+| contrast-0 | filter: contrast(0); |
+| contrast-50 | filter: contrast(0.5); |
+| contrast-75 | filter: contrast(0.75); |
+| contrast-100 | filter: contrast(1); |
+| contrast-125 | filter: contrast(1.25); |
+| contrast-150 | filter: contrast(1.5); |
+| contrast-200 | filter: contrast(2); |
+
+**Hue Rotate Classes**
+| Class | CSS Equivalent |
+|-------|----------------|
+| hue-rotate-0 | filter: hue-rotate(0deg); |
+| hue-rotate-15 | filter: hue-rotate(15deg); |
+| hue-rotate-30 | filter: hue-rotate(30deg); |
+| hue-rotate-60 | filter: hue-rotate(60deg); |
+| hue-rotate-90 | filter: hue-rotate(90deg); |
+| hue-rotate-180 | filter: hue-rotate(180deg); |
+</details>
+
+
+<details>
+  <summary>interactivity</summary>
+
+  - [interactivity](https://codepen.io/Weijie-Xi/pen/PoMENvq)
+
+### Scroll Behavior
+```html
+<a href="#item">Scroll To Item</a>
+```
+Navigates to the `#item` anchor on the page.
+
+### Button States
+
+**Hover State**
+```html
+<button class="bg-black text-white py-3 px-5 rounded-lg m-3 hover:bg-orange-500 hover:text-black">Submit</button>
+```
+Changes background and text color on hover.
+
+### Focus State
+```html
+<button class="bg-black text-white py-3 px-5 rounded-lg m-3 focus:bg-green-500 focus:text-black">Submit</button>
+```
+Changes background and text color on keyboard focus.
+
+### Active State
+```html
+<button class="bg-black text-white py-3 px-5 rounded-lg m-3 active:bg-yellow-500 active:text-black">Submit</button>
+```
+Changes background and text color when the button is clicked.
+
+### Group Hover
+Style elements based on the parent hover state:
+```html
+<a href="#" class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 hover:bg-sky-500">
+  <div class="flex items-center">
+    <h3 class="group-hover:text-white">Card Title</h3>
+  </div>
+  <p class="group-hover:text-white">This is some card text</p>
+</a>
+```
+When the anchor is hovered, the child text elements change color.
+
+### Pseudo Classes
+Alternate styling using `even` and `odd`:
+```html
+<ul>
+  <li class="even:bg-green-200 odd:bg-blue-200">Item 1</li>
+  <!-- ...repeat for other list items -->
+</ul>
+```
+Useful for alternating row backgrounds.
+
+### Form Styling
+### Default vs Reset Appearance
+```html
+<select>
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<select class="appearance-none">
+  <option>Yes</option>
+  <option>No</option>
+</select>
+```
+`appearance-none` removes browser default styles for customization.
+
+### Cursor Types
+```html
+<button class="cursor-pointer">Submit</button>
+<button class="cursor-progress">Loading...</button>
+<button class="cursor-not-allowed" disabled>Confirm</button>
+```
+Changes the mouse pointer based on interaction.
+
+ **Other Tailwind Cursor Utilities:**
+- `cursor-auto`
+- `cursor-default`
+- `cursor-pointer`
+- `cursor-wait`
+- `cursor-text`
+- `cursor-move`
+- `cursor-not-allowed`
+- `cursor-progress`
+- `cursor-help`
+- `cursor-crosshair`
+- `cursor-zoom-in` / `cursor-zoom-out`
+- `cursor-n-resize`, `cursor-s-resize`, etc. (all directional cursors)
+
+### Textarea Resizing
+```html
+<textarea class="border border-black rounded resize"></textarea>
+```
+Allows resizing of the textarea.
+
+### User Text Selection
+```html
+<div class="select-none">Can't select this</div>
+<div class="select-text">Can select normally</div>
+<div class="select-all">Selects all text when clicked</div>
+<div class="select-auto">Default browser selection behavior</div>
+```
+Controls how users can select text.
+
+### Scroll Target Anchor
+```html
+<div id="item">Item</div>
+``` 
+</details>
+
+
+<details>
+  <summary>responsive Breakpoint</summary>
+
+  - [responsive Breakpoin](https://codepen.io/Weijie-Xi/pen/bGXapPe)
+
+### HTML Sample
+```html
+<body
+  class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800"
+>
+  <h1 class="text-white text-xl md:text-3xl xl:text-5xl">
+    Tailwind is awesome
+  </h1>
+
+  <script>
+    function showBrowserWidth() {
+      const width =
+        window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+
+      document.querySelector('h1').innerHTML = `Width: ${width}`;
+    }
+    window.onload = showBrowserWidth;
+    window.onresize = showBrowserWidth;
+  </script>
+</body>
+```
+
+### How It Works
+- The `<body>` uses different background colors at each responsive breakpoint.
+- The `<h1>` text displays the current window width.
+- The script dynamically updates the text on page load and resize.
+
+### Tailwind CSS Breakpoint Reference
+| Breakpoint | Min Width | Media Query | Example Usage |
+|------------|-----------|-------------|----------------|
+| `sm`       | 640px     | `@media (min-width: 640px)`   | `sm:bg-green-800` |
+| `md`       | 768px     | `@media (min-width: 768px)`   | `md:bg-blue-800` |
+| `lg`       | 1024px    | `@media (min-width: 1024px)`  | `lg:bg-yellow-800` |
+| `xl`       | 1280px    | `@media (min-width: 1280px)`  | `xl:bg-purple-800` |
+| `2xl`      | 1536px    | `@media (min-width: 1536px)`  | `2xl:bg-orange-800` |
+
+### Usage
+- Helps visualize how Tailwind's responsive design system works.
+- Demonstrates how to bind CSS styles to screen sizes.
+- JavaScript enhances it by showing the exact screen width.
+
+### Tailwind Docs
+- [Responsive Design](https://tailwindcss.com/docs/responsive-design)
+- [Breakpoints](https://tailwindcss.com/docs/screens)
+</details>
+
+
+<details>
+  <summary>columns</summary>
+
+- [columns](https://codepen.io/Weijie-Xi/pen/yLmpOmo)
+
+### HTML Example
+```html
+<body>
+  <div class="columns-2 gap-8">
+    <img class="w-full" src="/assets/img/img1.jpg" />
+    <img class="w-full" src="/assets/img/img2.jpg" />
+    <img class="w-full break-after-column" src="/assets/img/img3.jpg" />
+    <img class="w-full" src="/assets/img/img4.jpg" />
+  </div>
+
+  <div class="columns-3 gap-24">
+    <img class="w-full" src="/assets/img/img3.jpg" />
+    <img class="w-full break-before-column" src="/assets/img/img4.jpg" />
+    <img class="w-full" src="/assets/img/img5.jpg" />
+    <img class="w-full" src="/assets/img/img6.jpg" />
+    <img class="w-full" src="/assets/img/img7.jpg" />
+  </div>
+
+  <div class="columns-3xs">
+    <!-- Video Aspect Ratio -->
+    <img class="w-full aspect-video" src="/assets/img/img8.jpg" />
+    <!-- Square Aspect Ratio -->
+    <img class="w-full aspect-square" src="/assets/img/img9.jpg" />
+    <img class="w-full break" src="/assets/img/img1.jpg" />
+    <img class="w-full" src="/assets/img/img2.jpg" />
+  </div>
+</body>
+```
+
+### Column Utility Classes
+Set the number or width of columns in a multi-column layout:
+| Class | CSS Output |
+|-------|-------------|
+| `columns-1` to `columns-12` | `columns: 1;` to `columns: 12;` |
+| `columns-auto` | `columns: auto;` |
+| `columns-3xs` | `columns: 16rem;` (256px) |
+| `columns-2xs` | `columns: 18rem;` (288px) |
+| `columns-xs`  | `columns: 20rem;` (320px) |
+| `columns-sm`  | `columns: 24rem;` (384px) |
+| `columns-md`  | `columns: 28rem;` (448px) |
+| `columns-lg`  | `columns: 32rem;` (512px) |
+| `columns-xl`  | `columns: 36rem;` (576px) |
+| `columns-2xl` | `columns: 42rem;` (672px) |
+| `columns-3xl` | `columns: 48rem;` (768px) |
+| `columns-4xl` | `columns: 56rem;` (896px) |
+| `columns-5xl` | `columns: 64rem;` (1024px) |
+| `columns-6xl` | `columns: 72rem;` (1152px) |
+| `columns-7xl` | `columns: 80rem;` (1280px) |
+
+
+### Break After Classes
+Control how an element breaks after itself in a column layout:
+| Class | CSS Equivalent |
+|--------|-----------------|
+| `break-after-auto` | `break-after: auto;` |
+| `break-after-avoid` | `break-after: avoid;` |
+| `break-after-all` | `break-after: all;` |
+| `break-after-avoid-page` | `break-after: avoid-page;` |
+| `break-after-page` | `break-after: page;` |
+| `break-after-left` | `break-after: left;` |
+| `break-after-right` | `break-after: right;` |
+| `break-after-column` | `break-after: column;` |
+
+
+### Break Before Classes
+Control how an element breaks before itself in a column layout:
+
+| Class | CSS Equivalent |
+|--------|-----------------|
+| `break-before-auto` | `break-before: auto;` |
+| `break-before-avoid` | `break-before: avoid;` |
+| `break-before-all` | `break-before: all;` |
+| `break-before-avoid-page` | `break-before: avoid-page;` |
+| `break-before-page` | `break-before: page;` |
+| `break-before-left` | `break-before: left;` |
+| `break-before-right` | `break-before: right;` |
+| `break-before-column` | `break-before: column;` |
+
+
+### Aspect Ratio Utilities
+| Class | Description |
+|-------|-------------|
+| `aspect-video` | Maintains a 16:9 ratio (video style) |
+| `aspect-square` | Maintains a 1:1 square ratio | 
+</details>
+
+
+<details>
+  <summary>flexbox</summary>
+
+  - [flexbox](https://codepen.io/Weijie-Xi/pen/OJKzXLM)
+
+### Flex and Alignment
+```html
+<div class="flex flex-wrap h-72 w-100 bg-gray-100 justify-around items-center">
+  <div class="p-10 border border-blue-600 bg-blue-100">01</div>
+  <div class="p-10 border border-blue-600 bg-blue-100">02</div>
+  <div class="self-start p-10 border border-blue-600 bg-blue-100">03</div>
+  <div class="self-end p-10 border border-blue-600 bg-blue-100">04</div>
+</div>
+```
+
+### Flex Column, Gap and Order
+```html
+<div class="flex flex-col gap-4 w-100 bg-gray-200 justify-around items-center">
+  <div class="order-4 p-10 border border-blue-600 bg-blue-100">01</div>
+  <div class="order-1 p-10 border border-blue-600 bg-blue-100">02</div>
+  <div class="p-10 border border-blue-600 bg-blue-100">03</div>
+  <div class="p-10 border border-blue-600 bg-blue-100">04</div>
+</div>
+```
+
+### Grow and Shrink
+```html
+<div class="flex w-100 bg-gray-300">
+  <div class="w-64 flex-none p-10 border border-blue-600 bg-blue-100">01</div>
+  <div class="w-64 flex-initial p-10 border border-blue-600 bg-blue-100">02</div>
+  <div class="w-64 flex-auto p-10 border border-blue-600 bg-blue-100">03</div>
+  <div class="w-64 flex-1 p-10 border border-blue-600 bg-blue-100">04</div>
+  <div class="p-10 border border-blue-600 bg-blue-100">05</div>
+  <div class="p-10 border border-blue-600 bg-blue-100">06</div>
+  <div class="p-10 border border-blue-600 bg-blue-100">07</div>
+</div>
+```
+
+### Justify Content Classes
+| Tailwind Class       | CSS Equivalent                  |
+|----------------------|----------------------------------|
+| `justify-start`      | `justify-content: flex-start;`   |
+| `justify-end`        | `justify-content: flex-end;`     |
+| `justify-center`     | `justify-content: center;`       |
+| `justify-between`    | `justify-content: space-between;`|
+| `justify-around`     | `justify-content: space-around;` |
+| `justify-evenly`     | `justify-content: space-evenly;` |
+
+### Align Items Classes
+| Tailwind Class       | CSS Equivalent                |
+|----------------------|--------------------------------|
+| `items-start`        | `align-items: flex-start;`     |
+| `items-end`          | `align-items: flex-end;`       |
+| `items-center`       | `align-items: center;`         |
+| `items-baseline`     | `align-items: baseline;`       |
+| `items-stretch`      | `align-items: stretch;`        |
+
+### Flex Direction Classes
+| Tailwind Class       | CSS Equivalent               |
+|----------------------|-------------------------------|
+| `flex-row`           | `flex-direction: row;`        |
+| `flex-row-reverse`   | `flex-direction: row-reverse;`|
+| `flex-col`           | `flex-direction: column;`     |
+| `flex-col-reverse`   | `flex-direction: column-reverse;`|
+
+### Flex Wrap Classes
+| Tailwind Class       | CSS Equivalent               |
+|----------------------|-------------------------------|
+| `flex-wrap`          | `flex-wrap: wrap;`            |
+| `flex-wrap-reverse`  | `flex-wrap: wrap-reverse;`    |
+| `flex-nowrap`        | `flex-wrap: nowrap;`          |
+
+### Flex Properties
+| Tailwind Class       | CSS Equivalent & Meaning                                      |
+|----------------------|-----------------------------------------------------------------|
+| `flex-none`          | `flex: none;` Prevents the item from growing or shrinking      |
+| `flex-initial`       | `flex: 0 1 auto;` Allows item to shrink but not grow           |
+| `flex-auto`          | `flex: 1 1 auto;` Item can grow and shrink based on content     |
+| `flex-1`             | `flex: 1 1 0%;` Item grows and shrinks freely, ignoring size    |
+</details>
+
+
+<details>
+  <summary>grid</summary>
+  
+  - [grid](https://codepen.io/Weijie-Xi/pen/pvJWNpX)
+
+### Grid with Columns and Rows
+```html
+<div class="grid grid-cols-3 grid-rows-4 gap-4 w-100 bg-gray-100">
+  <!-- Grid items 01–09 -->
+</div>
+```
+- `grid-cols-3`: Creates 3 equal-width columns
+- `grid-rows-4`: Creates 4 equal-height rows
+- `gap-4`: Adds space between rows and columns
+
+### Grid with Column and Row Spans
+```html
+<div class="grid grid-cols-3 gap-4 w-100 bg-gray-100">
+  <div class="col-span-2 row-span-2">01</div>
+  <!-- More items with span modifiers -->
+</div>
+```
+- `col-span-2`: Item spans 2 columns
+- `row-span-2`: Item spans 2 rows
+- `col-span-3`: Spans the entire row (3 columns)
+
+### Grid Template Classes
+
+**Grid Columns**
+| Class | Description |
+|-------|-------------|
+| `grid-cols-1` | 1 column |
+| `grid-cols-2` to `grid-cols-12` | Up to 12 responsive columns |
+| `grid-cols-none` | No grid columns |
+
+**Grid Rows**
+| Class | Description |
+|-------|-------------|
+| `grid-rows-1` to `grid-rows-6` | Sets the number of grid rows |
+| `grid-rows-none` | No grid rows |
+</details>
+
+<details>
+  <summary>transform-transition</summary>
+
+  - [transform-transition](https://codepen.io/Weijie-Xi/pen/wvVpWMz)
+
+
+```html
+<!-- No Transition -->
+<button class="px-8 py-2 m-24 text-white bg-blue-500 rounded hover:bg-blue-700">
+  Click me
+</button>
+
+<!-- Transition -->
+<button class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition-colors duration-700 hover:bg-blue-700">
+  Click me
+</button>
+
+<!-- Transition & Transform -->
+<button class="px-8 py-2 m-24 text-white bg-blue-500 rounded transition ease-in-out delay-150 duration-2000 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">
+  Click me
+</button>
+
+<!-- Transform & Transition -->
+<img src="../assets/img/img1.jpg" alt="" class="hover:transform hover:rotate-180 hover:scale-75 hover:skew-x-12 transition" />
+```
+
+### Transition Utilities
+
+**Properties:**
+- `transition-none`: No transition
+- `transition-all`: Transition all supported properties
+- `transition`: Default group (includes color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter)
+- `transition-colors`: Transition color properties only
+- `transition-opacity`: Transition opacity
+- `transition-shadow`: Transition box-shadow
+- `transition-transform`: Transition transforms (scale, rotate, translate, skew)
+
+**Duration:**
+- `duration-75`: 75ms
+- `duration-100` to `duration-1000`: Up to 1000ms
+
+**Timing Function:**
+- `ease-linear`: Linear
+- `ease-in`: Accelerating
+- `ease-out`: Decelerating
+- `ease-in-out`: Smooth acceleration & deceleration
+
+**Delay:**
+- `delay-75` to `delay-1000`: Adds delay before transition starts
+
+### Transform Utilities
+
+**Scale**
+- `scale-0` to `scale-150`
+- Axis-specific: `scale-x-50`, `scale-y-110`, etc.
+
+**Rotate**
+- `rotate-0` to `rotate-180`
+
+**Translate**
+- X/Y direction: `translate-x-0`, `translate-y-1.5`, `translate-x-1/2`, `translate-y-full`, etc.
+- Supports both rem and percentage values
+
+**Skew**
+- `skew-x-0` to `skew-x-12`, `skew-y-0` to `skew-y-12`
+
+**Transform Origin**
+- `origin-center`, `origin-top`, `origin-bottom-right`, etc.
+
+### Best Practices
+- Combine `transition` with `hover:` or `focus:` for interactive UI
+- Use `duration`, `ease-*`, and `delay-*` for better control
+- Use `transform` utilities to animate elements smoothly
+- For dramatic effects: combine scale + rotate + skew + color change
+
+### Resources
+- [Tailwind Transitions Docs](https://tailwindcss.com/docs/transition-property)
+- [Tailwind Transforms Docs](https://tailwindcss.com/docs/transform) 
+</details>
+
+
+<details>
+  <summary>animation</summary>
+
+- [animation](https://codepen.io/Weijie-Xi/pen/wvVpWWo)
+
+### Custom Animation Setup
+To add custom animations using Tailwind CSS:
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          'spin-slow': 'spin 3s linear infinite',
+          wiggle: 'wiggle 1s ease-in-out infinite',
+        },
+        keyframes: {
+          wiggle: {
+            '0%, 100%': { transform: 'rotate(-12deg)' },
+            '50%': { transform: 'rotate(12deg)' },
+          },
+        },
+      },
+    },
+  }
+</script>
+```
+
+### SVG Wiggle Example
+```html
+<svg class="animate-wiggle w-48 text-white" ...>
+  <!-- SVG content here -->
+</svg>
+```
+This applies the custom "wiggle" animation defined in Tailwind config.
+
+
+### Built-in Tailwind Animations
+
+**`animate-none`**
+```css
+animation: none;
+```
+Disables animation.
+
+**`animate-spin`**
+```css
+animation: spin 1s linear infinite;
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+```
+Spins the element continuously.
+
+**`animate-ping`**
+```css
+animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+```
+Creates a radar-like pinging effect.
+
+**`animate-pulse`**
+```css
+animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+```
+Creates a fading pulse effect.
+
+**`animate-bounce`**
+```css
+animation: bounce 1s infinite;
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+```
+Creates a bouncing motion.
+
+### ✅ Summary
+Tailwind's utility classes allow you to:
+- Use built-in animations like `spin`, `pulse`, `bounce`, `ping`
+- Extend with custom `keyframes` and `animation` classes in Tailwind config
+- Apply these classes directly to elements like `div`, `svg`, `img` for expressive UIs
+</details>
+
+
+<details>
+  <summary>customization</summary>
+
+- [customization](https://codepen.io/Weijie-Xi/pen/MWNreeQ)
+
+This example shows how to customize Tailwind CSS directly in HTML using the CDN setup and how to define custom breakpoints, fonts, colors, spacing, and border radius.
+
+### Tailwind Config Customization
+```js
+ tailwind.config = {
+   theme: {
+     screens: {
+       sm: '550px',
+       md: '800px',
+       lg: '1200px',
+       xl: '1440px',
+     },
+     fontFamily: {
+       sans: ['Graphik', 'sans-serif'],
+       serif: ['Merriweather', 'serif'],
+     },
+     extend: {
+       colors: {
+         primary: '#ff5733',
+         secondary: '#fffc33',
+       },
+       spacing: {
+         6: '2.5rem',
+         128: '32rem',
+       },
+       borderRadius: {
+         '4xl': '2rem',
+       },
+     },
+   },
+ }
+```
+
+### ✅ What This Configuration Does:
+- **Breakpoints:** Custom screen widths (instead of Tailwind defaults)
+- **Fonts:** Adds custom sans and serif font families
+- **Colors:** Adds new `primary` and `secondary` color values
+- **Spacing:** Custom spacing scale (6 and 128)
+- **Border Radius:** New `4xl` value (2rem)
+
+
+### Responsive Background Example
+```html
+<body class="bg-black sm:bg-green-800 md:bg-blue-800 lg:bg-yellow-800 xl:bg-purple-800 2xl:bg-orange-800">
+```
+This line changes the background color based on the viewport width.
+
+### Breakpoint Reference (Default Tailwind)
+| Class | Min Width | Media Query |
+|-------|-----------|--------------|
+| `sm`  | 640px     | `@media (min-width: 640px)` |
+| `md`  | 768px     | `@media (min-width: 768px)` |
+| `lg`  | 1024px    | `@media (min-width: 1024px)` |
+| `xl`  | 1280px    | `@media (min-width: 1280px)` |
+| `2xl` | 1536px    | `@media (min-width: 1536px)` |
+
+⚠️ In the example config, these are overridden by smaller custom breakpoints.
+
+### JavaScript for Responsive Display
+```js
+function showBrowserWidth() {
+  const width = window.innerWidth;
+  document.querySelector('h1').innerHTML = `Width: ${width}`;
+}
+window.onload = showBrowserWidth;
+window.onresize = showBrowserWidth;
+```
+This script updates the `<h1>` element with the current browser width in real time.
+
+### Summary
+- Customize Tailwind via CDN using `tailwind.config`
+- Use custom breakpoints, fonts, and styles for full design control
+- Observe background color change by resizing browser
+- Use JavaScript to display current screen width dynamically
+</details>
+
+
+<details>
+  <summary>dark-mode</summary>
+
+  - [dark-mode](https://codepen.io/Weijie-Xi/pen/JjgMKKx)
+
+### Tailwind Configuration
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+  }
+</script>
+```
+- Enables dark mode using class strategy (class="dark")
+
+### Toggle Switch Styling (CSS)
+```css
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #68d391;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background: #68d391;
+}
+```
+- When the checkbox is checked, it visually changes position and color.
+
+### HTML Toggle and Content Structure
+- The container uses `dark:bg-slate-900` and `dark:text-white` to enable switching themes.
+- The toggle switch is implemented using a checkbox and styled with custom CSS.
+
+**JavaScript Functionality**
+```javascript
+document.getElementById('toggle').addEventListener('change', function () {
+  if (this.checked) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+})
+```
+- Adds or removes the `dark` class from `<html>` based on checkbox state.
+
+### How It Works
+- Tailwind’s `dark:` prefix targets the `.dark` class on the root `<html>` element.
+- The JavaScript listener toggles the `dark` class based on checkbox input.
+- The page automatically updates the theme in real time.
+
+### Credit for Toggle Style
+Component inspiration: [Tailwind Components – Toggle Switch](https://tailwindcomponents.com/component/toggle-switch)
+
+### Files Involved
+- `index.html` – Contains the full HTML, toggle CSS, and JS logic.
+
+### Resources
+- [TailwindCSS Docs – Dark Mode](https://tailwindcss.com/docs/dark-mode)
+- [Tailwind Components](https://tailwindcomponents.com/)
+
+### Optional Enhancements
+- Store toggle preference using `localStorage`
+- Add transition animations to theme changes
+- Use SVG icons (☀️🌙) for the toggle
+</details>
 
 
