@@ -117,6 +117,7 @@ Tailwind: *(Use inline style)*
 
 The CSS properties that allow you to style the background of an element with colors and images
 - [Background](https://cssreference.io/backgrounds/)
+- [CSS-Tailwind-background](https://codepen.io/Weijie-Xi/pen/xbGzOOB)
 
 Shorthand Syntax Example
 ```css

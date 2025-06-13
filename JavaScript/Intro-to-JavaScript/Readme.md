@@ -1106,5 +1106,247 @@ console.log(totalLandArea);
 ```
 
 This guide covers everything from basic syntax to advanced array manipulations. Practice these concepts regularly to become fluent in JavaScript array operations!
-
 </details>
+
+
+JavaScript arrays are versatile structures used to store ordered collections of items. Below is a comprehensive guide to creating, manipulating, and utilizing arrays effectively.
+
+---
+
+## 1. Creating Arrays
+
+```js
+const arr = [];  // Empty array
+const arr = [1, 2, 3];  // Array with elements
+const arr = new Array(3);  // Array with 3 empty slots
+```
+
+---
+
+## 2. Accessing and Modifying Elements
+
+```js
+const arr = [1, 2, 3];
+console.log(arr[0]);  // Outputs 1
+arr[1] = 5;  // Now arr = [1, 5, 3]
+```
+
+---
+
+## 3. Array Properties
+
+- `.length`: Returns number of elements
+
+```js
+const arr = [1, 2, 3];
+console.log(arr.length);  // 3
+```
+
+---
+
+## 4. Adding and Removing Elements
+
+```js
+const arr = [1, 2, 3];
+arr.push(4);     // [1, 2, 3, 4]
+arr.pop();       // [1, 2, 3]
+arr.shift();     // [2, 3]
+arr.unshift(0);  // [0, 2, 3]
+```
+
+---
+
+## 5. Combining and Slicing Arrays
+
+```js
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const combined = arr1.concat(arr2);  // [1, 2, 3, 4]
+
+const arr = [1, 2, 3, 4];
+const sliced = arr.slice(1, 3);  // [2, 3]
+
+arr.splice(2, 1, 5);  // [1, 2, 5, 4]
+```
+
+---
+
+## 6. Searching and Iterating
+
+```js
+const arr = [1, 2, 3, 4];
+arr.indexOf(3);             // 2
+arr.find(x => x > 2);       // 3
+arr.filter(x => x > 2);     // [3, 4]
+arr.map(x => x * 2);        // [2, 4, 6, 8]
+arr.forEach(x => console.log(x));  // Prints all elements
+```
+
+---
+
+## 7. Sorting and Reversing
+
+```js
+const arr = [3, 1, 4, 2];
+arr.sort();     // [1, 2, 3, 4]
+arr.reverse();  // [4, 3, 2, 1]
+```
+
+---
+
+## 8. Reducing and Accumulating
+
+```js
+const arr = [1, 2, 3, 4];
+const sum = arr.reduce((total, current) => total + current, 0);  // 10
+```
+
+---
+
+## 9. Checking Array Properties
+
+```js
+const arr = [1, 2, 3, 4];
+arr.every(x => x > 0);  // true
+arr.some(x => x > 3);   // true
+arr.includes(3);        // true
+```
+
+---
+
+## 10. Destructuring Arrays
+
+```js
+const arr = [1, 2, 3];
+const [first, second] = arr;
+```
+
+---
+
+## Arrays vs Objects
+
+- Arrays: Ordered collection
+- Objects: Unordered key-value pairs
+
+```js
+const days = ["Monday", "Tuesday", "Wednesday"];
+console.log(days[0]);  // "Monday"
+```
+
+---
+
+## Using Array Methods
+
+```js
+const primeNumbers = [1, 2, 3, 5, 7, 11, 13, 17];
+console.log(primeNumbers.length);            // 8
+console.log(primeNumbers.join(" | "));       // "1 | 2 | 3 | 5 | 7 | 11 | 13 | 17"
+```
+
+---
+
+## Adding/Removing Items
+
+```js
+cities.unshift('Tblisi');
+cities.push('Tehran');
+cities.shift();
+cities.pop();
+```
+
+---
+
+## Updating Objects in Arrays
+
+```js
+const courses = [
+  { teacher: "John Denero", course: "CS 61A" },
+  { teacher: "Paul Hilfinger", course: "CS 61B" }
+];
+courses.push({ teacher: "Josh Hug", course: "Data 100" });
+courses[1] = { teacher: "Anant Sahai", course: "New Course" };
+```
+
+---
+
+## Looping Through Arrays
+
+```js
+for (let i = 0; i < cities.length; i++) {
+  console.log(cities[i]);
+}
+
+cities.forEach(city => console.log(city));
+```
+
+---
+
+## Searching for Type in Array
+
+```js
+function searchType(array, type) {
+  return array.filter(item => item.includes(type));
+}
+```
+
+---
+
+## Removing Exact Match
+
+```js
+for (let i = 0; i < apples.length; i++) {
+  if (apples[i] === 'Pink Lady') {
+    apples.splice(i, 1);
+  }
+}
+```
+
+---
+
+## Higher Order Functions (HOFs)
+
+```js
+const calc = (num1, num2, operator) => operator(num1, num2);
+```
+
+### Callbacks
+
+```js
+const add = (a, b) => a + b;
+calc(5, 4, add);  // 9
+```
+
+---
+
+## .forEach()
+
+```js
+cityData.forEach((item, index) => {
+  console.log(item.city, item.state, index);
+});
+```
+
+---
+
+## .map()
+
+```js
+const lowerCaseStates = cityData.map(item => item.state.toLowerCase());
+```
+
+---
+
+## .filter()
+
+```js
+const bigPops = cityData.filter(item => item.population > 500000);
+const bigCities = bigPops.map(item => item.city);
+```
+
+---
+
+## .reduce()
+
+```js
+const totalLandArea = cityData.reduce((acc, item) => acc + item.land_area, 0);
+```
