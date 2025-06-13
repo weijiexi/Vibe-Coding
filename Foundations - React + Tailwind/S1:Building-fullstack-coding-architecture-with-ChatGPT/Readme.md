@@ -1,1 +1,0 @@
-# S1:Building full stack coding architecture with ChatGPT
