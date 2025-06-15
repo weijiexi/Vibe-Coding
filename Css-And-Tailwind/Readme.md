@@ -385,6 +385,8 @@ You can use named colors in CSS like this:
 <details>
   <summary>Centering</summary>
 
+- [CSS-Tailwind CSS-Cantering](https://codepen.io/Weijie-Xi/pen/jEPKJvZ?editors=1100)
+
 Centering elements in CSS can be done in a variety of ways depending on the type of layout (block, flex, grid, or inline elements) and whether you are centering horizontally, vertically, or both.
 
 #### 1. Centering Block Elements Horizontally
